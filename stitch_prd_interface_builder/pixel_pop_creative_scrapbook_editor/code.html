@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PIXEL POP ★ Scrapbook Editor</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Epilogue, Space Grotesk, Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700;0,800;0,900;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#ede4ff",
+            "on-surface": "#1d1733",
+            "chrome-shine": "#FFFFFF",
+            "on-background": "#1d1733",
+            "bubblegum-soft": "#FFB7D5",
+            "on-secondary-fixed-variant": "#004d63",
+            "surface-container": "#f2ebff",
+            "surface-dim": "#dfd5fb",
+            "tertiary": "#5f559a",
+            "secondary": "#006783",
+            "on-tertiary-fixed": "#1b0c53",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#6e0044",
+            "inverse-surface": "#332c49",
+            "secondary-fixed": "#bce9ff",
+            "ink-dark": "#2B213A",
+            "error": "#ba1a1a",
+            "cyber-sky": "#70D6FF",
+            "lilac-dream": "#BDB2FF",
+            "tertiary-container": "#a096e1",
+            "outline-variant": "#dcbfc9",
+            "background": "#fdf7ff",
+            "mint-pop": "#A0E7E5",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#564149",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#ac2471",
+            "on-primary-fixed-variant": "#8c0058",
+            "chrome-edge": "#94A3B8",
+            "on-primary-fixed": "#3d0024",
+            "bubblegum-hot": "#FF69B4",
+            "tertiary-fixed-dim": "#c8bfff",
+            "secondary-fixed-dim": "#6cd3fc",
+            "surface": "#fdf7ff",
+            "on-secondary-fixed": "#001f2a",
+            "canvas-bg": "#F8F7FF",
+            "primary-fixed": "#ffd8e6",
+            "surface-bright": "#fdf7ff",
+            "primary-container": "#ff69b4",
+            "inverse-on-surface": "#f5eeff",
+            "inverse-primary": "#ffb0d0",
+            "chrome-silver": "#E2E8F0",
+            "tertiary-fixed": "#e5deff",
+            "on-primary": "#ffffff",
+            "baby-blue": "#B4E4FF",
+            "surface-variant": "#e7deff",
+            "primary-fixed-dim": "#ffb0d0",
+            "on-secondary-container": "#005c75",
+            "sparkle-coral": "#FF85A1",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#e7deff",
+            "on-tertiary-container": "#362c6f",
+            "outline": "#897179",
+            "surface-container-low": "#f8f1ff",
+            "surface-tint": "#ac2471",
+            "sticker-yellow": "#FFD166",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "secondary-container": "#70d6ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter-sm": "0.75rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "margin-desktop": "2.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem",
+            "gutter-lg": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Epilogue"],
+            "headline-lg": ["Epilogue"],
+            "label-md": ["Space Grotesk"],
+            "label-sm": ["Space Grotesk"],
+            "title-lg": ["Space Grotesk"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "title-md": ["Space Grotesk"],
+            "headline-lg-mobile": ["Epilogue"],
+            "headline-md": ["Epilogue"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Epilogue"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "800" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }],
+            "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "title-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-xl": ["44px", { "lineHeight": "52px", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .retro-grid-bg {
+      background-color: #F8F7FF;
+      background-image: radial-gradient(#d3c6ea 1.5px, transparent 1.5px), radial-gradient(#e7deff 1.5px, #F8F7FF 1.5px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+    .checkerboard-tile {
+      background-image: repeating-conic-gradient(#ffe6f1 0% 25%, #ffffff 0% 50%);
+      background-size: 16px 16px;
+    }
+    .holo-tape {
+      background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(189,178,255,0.5) 40%, rgba(160,231,229,0.5) 70%, rgba(255,183,213,0.7) 100%);
+      box-shadow: 1px 2px 3px rgba(43, 33, 58, 0.15);
+      backdrop-filter: blur(2px);
+    }
+    .gloss-shine {
+      background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.1) 45%, rgba(0,0,0,0.06) 100%);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased h-screen flex flex-col overflow-hidden selection:bg-bubblegum-hot selection:text-white">
+<!-- TOP APP BAR -->
+<header class="border-b-2 border-ink-dark bg-surface-container shadow-[0_4px_0_0_#2B213A] z-40 relative flex-shrink-0">
+<div class="flex justify-between items-center w-full px-space-md md:px-margin-desktop py-space-sm max-w-7xl mx-auto">
+<!-- Left side: Back & Editable Strip Filename -->
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border-2 border-ink-dark bg-surface-container-lowest font-label-md text-label-md text-ink-dark shadow-[2px_2px_0px_#2B213A] hover:bg-surface-container-high hover:scale-105 active:translate-y-0.5 active:shadow-[1px_1px_0_0_#2B213A] transition-all" href="#studio">
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
+<span>Studio</span>
+</a>
+<!-- Filename Digital Chip -->
+<div class="hidden sm:flex items-center gap-2 bg-surface-container-lowest px-3 py-1 rounded-lg border-2 border-ink-dark shadow-[inset_1px_2px_3px_rgba(0,0,0,0.08)]">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="description">description</span>
+<input class="bg-transparent border-none p-0 text-title-md font-title-md text-ink-dark focus:ring-0 w-48 font-mono select-all" type="text" value="my_photostrip_v1.png"/>
+<span class="inline-block w-2 h-2 rounded-full bg-mint-pop border border-ink-dark animate-pulse"></span>
+</div>
+</div>
+<!-- Center Logo / Session State -->
+<div class="flex items-center gap-1">
+<span class="text-headline-md font-headline-md font-extrabold text-primary tracking-tight drop-shadow-[2px_2px_0px_#2B213A]">
+          PIXEL POP ★
+        </span>
+<span class="hidden lg:inline-block ml-2 px-2 py-0.5 rounded-full bg-secondary-container text-ink-dark border border-ink-dark font-label-sm text-label-sm uppercase tracking-wider shadow-[1px_1px_0px_#2B213A]">
+          Studio v2.4
+        </span>
+</div>
+<!-- Right side: Actions & Primary CTA -->
+<div class="flex items-center gap-space-sm">
+<!-- Undo / Redo Bubble Buttons -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-full border-2 border-ink-dark shadow-[2px_2px_0px_#2B213A]">
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors active:scale-95 text-ink-dark" title="Undo (↺)">
+<span class="material-symbols-outlined text-[18px]" data-icon="undo">undo</span>
+</button>
+<div class="w-0.5 h-4 bg-outline-variant"></div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors active:scale-95 text-ink-dark" title="Redo (↻)">
+<span class="material-symbols-outlined text-[18px]" data-icon="redo">redo</span>
+</button>
+</div>
+<!-- Reset Button -->
+<button class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-full border-2 border-ink-dark bg-surface-container-lowest font-label-md text-label-md text-on-surface-variant hover:text-error hover:bg-error-container/40 active:translate-y-0.5 transition-all">
+<span class="material-symbols-outlined text-[16px]" data-icon="refresh">refresh</span>
+<span>Reset</span>
+</button>
+<!-- Glossy Primary CTA Export -->
+<button class="relative overflow-hidden group inline-flex items-center gap-1.5 px-4 py-2 rounded-full border-2 border-ink-dark bg-bubblegum-hot text-chrome-shine font-title-md text-title-md shadow-[3px_3px_0px_#2B213A] hover:scale-105 active:translate-y-0.5 active:shadow-[1px_1px_0_0_#2B213A] transition-all">
+<div class="absolute inset-0 gloss-shine pointer-events-none"></div>
+<span class="material-symbols-outlined text-[20px]" data-icon="ios_share">ios_share</span>
+<span class="tracking-tight">Preview &amp; Export (PNG) ★</span>
+</button>
+</div>
+</div>
+</header>
+<!-- MAIN WORKSPACE HYBRID VIEWPORT -->
+<div class="flex-1 flex overflow-hidden relative">
+<!-- LEFT TOOL RAIL (Cute Vertical Navigation) -->
+<nav class="w-20 md:w-24 bg-surface-container border-r-2 border-ink-dark flex flex-col items-center py-space-md gap-space-sm z-30 shadow-[2px_0px_0px_#2B213A] flex-shrink-0 select-none">
+<!-- Layouts (ACTIVE) -->
+<button class="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex flex-col items-center justify-center gap-1 border-2 border-ink-dark bg-cyber-sky text-ink-dark shadow-[3px_3px_0px_#2B213A] scale-105 transition-all relative">
+<span class="material-symbols-outlined text-[22px]" data-icon="view_quilt">view_quilt</span>
+<span class="font-label-sm text-label-sm">Layouts</span>
+<span class="absolute -top-1.5 -right-1.5 bg-bubblegum-hot text-white rounded-full w-4 h-4 flex items-center justify-center font-label-sm text-[9px] border border-ink-dark">★</span>
+</button>
+<!-- Filters -->
+<button class="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-ink-dark hover:bg-surface-container-high text-on-surface-variant hover:text-ink-dark hover:shadow-[2px_2px_0px_#2B213A] transition-all">
+<span class="material-symbols-outlined text-[22px]" data-icon="auto_fix_high">auto_fix_high</span>
+<span class="font-label-sm text-label-sm">Filters</span>
+</button>
+<!-- Stickers -->
+<button class="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-ink-dark hover:bg-surface-container-high text-on-surface-variant hover:text-ink-dark hover:shadow-[2px_2px_0px_#2B213A] transition-all">
+<span class="material-symbols-outlined text-[22px]" data-icon="local_fire_department">local_fire_department</span>
+<span class="font-label-sm text-label-sm">Stickers</span>
+</button>
+<!-- Text -->
+<button class="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-ink-dark hover:bg-surface-container-high text-on-surface-variant hover:text-ink-dark hover:shadow-[2px_2px_0px_#2B213A] transition-all">
+<span class="material-symbols-outlined text-[22px]" data-icon="title">title</span>
+<span class="font-label-sm text-label-sm">Text</span>
+</button>
+<!-- Frames -->
+<button class="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-ink-dark hover:bg-surface-container-high text-on-surface-variant hover:text-ink-dark hover:shadow-[2px_2px_0px_#2B213A] transition-all">
+<span class="material-symbols-outlined text-[22px]" data-icon="crop_portrait">crop_portrait</span>
+<span class="font-label-sm text-label-sm">Frames</span>
+</button>
+<!-- Backgrounds -->
+<button class="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex flex-col items-center justify-center gap-1 border-2 border-transparent hover:border-ink-dark hover:bg-surface-container-high text-on-surface-variant hover:text-ink-dark hover:shadow-[2px_2px_0px_#2B213A] transition-all">
+<span class="material-symbols-outlined text-[22px]" data-icon="texture">texture</span>
+<span class="font-label-sm text-label-sm">Backdrop</span>
+</button>
+<!-- Bottom Mini Tip Pill -->
+<div class="mt-auto flex flex-col items-center text-center px-1">
+<div class="w-8 h-8 rounded-full bg-mint-pop border-2 border-ink-dark flex items-center justify-center shadow-[1px_1px_0px_#2B213A] text-ink-dark">
+<span class="material-symbols-outlined text-[16px]" data-icon="help">help</span>
+</div>
+</div>
+</nav>
+<!-- PROPERTIES INSPECTOR PANEL (Docked Left next to Tool Rail) -->
+<aside class="w-72 lg:w-80 bg-surface border-r-2 border-ink-dark flex flex-col overflow-y-auto z-20 flex-shrink-0 shadow-[2px_0px_0px_rgba(43,33,58,0.1)]">
+<!-- Panel Header Bar (Retro Window Chrome Title) -->
+<div class="px-space-md py-space-sm bg-surface-container-high border-b-2 border-ink-dark flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="flex gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-bubblegum-hot border border-ink-dark inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-sticker-yellow border border-ink-dark inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-mint-pop border border-ink-dark inline-block"></span>
+</div>
+<span class="font-title-md text-title-md text-ink-dark">Layouts &amp; Styling</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]" data-icon="tune">tune</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-lg">
+<!-- SECTION 1: Layout Selector (PRD 8) -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-title-md text-title-md text-ink-dark flex items-center gap-1.5">
+<span>Strip Layout</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Presets</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- 4-Frame Vertical Strip (ACTIVE) -->
+<button class="flex flex-col items-center p-2 rounded-xl border-2 border-ink-dark bg-secondary-container shadow-[2px_2px_0px_#2B213A] scale-[1.02] transition-all">
+<div class="w-7 h-11 border-2 border-ink-dark bg-surface-container-lowest rounded-sm flex flex-col gap-0.5 p-0.5 justify-center mb-1 shadow-[1px_1px_0px_#2B213A]">
+<div class="w-full h-1.5 bg-bubblegum-soft rounded-[1px]"></div>
+<div class="w-full h-1.5 bg-bubblegum-soft rounded-[1px]"></div>
+<div class="w-full h-1.5 bg-bubblegum-soft rounded-[1px]"></div>
+<div class="w-full h-1.5 bg-bubblegum-soft rounded-[1px]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-ink-dark leading-tight text-center">4-Frame Strip</span>
+</button>
+<!-- 2x2 Collage Grid -->
+<button class="flex flex-col items-center p-2 rounded-xl border-2 border-ink-dark bg-surface-container-lowest hover:bg-surface-container-high transition-all">
+<div class="w-9 h-9 border-2 border-ink-dark bg-surface-container-lowest rounded-sm grid grid-cols-2 gap-0.5 p-0.5 mb-1">
+<div class="bg-outline-variant/60 rounded-[1px]"></div>
+<div class="bg-outline-variant/60 rounded-[1px]"></div>
+<div class="bg-outline-variant/60 rounded-[1px]"></div>
+<div class="bg-outline-variant/60 rounded-[1px]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight text-center">2×2 Grid</span>
+</button>
+<!-- 3-Frame Mini Strip -->
+<button class="flex flex-col items-center p-2 rounded-xl border-2 border-ink-dark bg-surface-container-lowest hover:bg-surface-container-high transition-all">
+<div class="w-7 h-9 border-2 border-ink-dark bg-surface-container-lowest rounded-sm flex flex-col gap-0.5 p-0.5 justify-center mb-1">
+<div class="w-full h-1.5 bg-outline-variant/60 rounded-[1px]"></div>
+<div class="w-full h-1.5 bg-outline-variant/60 rounded-[1px]"></div>
+<div class="w-full h-1.5 bg-outline-variant/60 rounded-[1px]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight text-center">3-Frame Mini</span>
+</button>
+</div>
+</div>
+<!-- SECTION 2: Filter Presets -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-title-md text-title-md text-ink-dark">Color Tone &amp; Filter</label>
+<span class="font-label-sm text-label-sm text-bubblegum-hot font-bold">★ Active: Soft Pink</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<!-- Original -->
+<button class="flex items-center gap-2 p-1.5 rounded-xl border-2 border-ink-dark bg-surface-container-lowest hover:bg-surface-container-high transition-all">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high border border-ink-dark overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-[18px]" data-icon="photo_camera">photo_camera</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Original</span>
+</button>
+<!-- Soft Pink (SELECTED) -->
+<button class="flex items-center gap-2 p-1.5 rounded-xl border-2 border-ink-dark bg-bubblegum-soft shadow-[2px_2px_0px_#2B213A] transition-all">
+<div class="w-8 h-8 rounded-lg bg-sparkle-coral/40 border border-ink-dark overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="favorite" data-weight="fill" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-ink-dark block">Soft Pink</span>
+<span class="font-label-sm text-[9px] text-primary">Warm 2000s</span>
+</div>
+</button>
+<!-- Cool Blue -->
+<button class="flex items-center gap-2 p-1.5 rounded-xl border-2 border-ink-dark bg-surface-container-lowest hover:bg-baby-blue/30 transition-all">
+<div class="w-8 h-8 rounded-lg bg-baby-blue/50 border border-ink-dark overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[18px]" data-icon="ac_unit">ac_unit</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cool Blue</span>
+</button>
+<!-- Vintage Flash -->
+<button class="flex items-center gap-2 p-1.5 rounded-xl border-2 border-ink-dark bg-surface-container-lowest hover:bg-sticker-yellow/30 transition-all">
+<div class="w-8 h-8 rounded-lg bg-sticker-yellow/40 border border-ink-dark overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-ink-dark text-[18px]" data-icon="flash_on">flash_on</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vintage Flash</span>
+</button>
+</div>
+</div>
+<!-- SECTION 3: Frame Color & Pattern Options -->
+<div>
+<label class="font-title-md text-title-md text-ink-dark block mb-space-xs">Border Card Style</label>
+<div class="grid grid-cols-4 gap-2">
+<!-- Baby Pink (Active) -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-12 h-12 rounded-xl bg-bubblegum-soft border-2 border-ink-dark shadow-[2px_2px_0px_#2B213A] ring-2 ring-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-ink-dark text-[18px]" data-icon="check">check</span>
+</div>
+<span class="font-label-sm text-[10px] text-ink-dark font-bold">Baby Pink</span>
+</button>
+<!-- Cyber Lilac -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-12 h-12 rounded-xl bg-lilac-dream border-2 border-ink-dark hover:scale-105 transition-all"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Lilac</span>
+</button>
+<!-- Glitter Silver -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-chrome-edge via-chrome-silver to-chrome-shine border-2 border-ink-dark hover:scale-105 transition-all relative overflow-hidden">
+<span class="absolute text-[8px] right-1 top-0.5">✨</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Glitter</span>
+</button>
+<!-- Pastel Checkerboard -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="w-12 h-12 rounded-xl checkerboard-tile border-2 border-ink-dark hover:scale-105 transition-all"></div>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Checker</span>
+</button>
+</div>
+</div>
+<!-- SECTION 4: Y2K Sticker Drawer / Quick Stamping -->
+<div class="border-t-2 border-ink-dark pt-space-md">
+<div class="flex items-center justify-between mb-2">
+<label class="font-title-md text-title-md text-ink-dark flex items-center gap-1">
+<span>Sticker Tray</span>
+<span class="text-bubblegum-hot">★</span>
+</label>
+<span class="font-label-sm text-label-sm text-primary cursor-pointer hover:underline">View All (48)</span>
+</div>
+<!-- Sticker Bento Grid -->
+<div class="grid grid-cols-4 gap-2 bg-surface-container-high/60 p-2.5 rounded-2xl border-2 border-ink-dark shadow-[inset_1px_1px_3px_rgba(0,0,0,0.06)]">
+<!-- Cyber Star -->
+<button class="w-12 h-12 rounded-xl bg-sticker-yellow/80 border-2 border-ink-dark flex items-center justify-center hover:scale-110 hover:-rotate-6 shadow-[2px_2px_0px_#2B213A] transition-transform text-lg" title="Cyber Star">
+              ⭐
+            </button>
+<!-- Pixel Heart -->
+<button class="w-12 h-12 rounded-xl bg-bubblegum-soft border-2 border-ink-dark flex items-center justify-center hover:scale-110 hover:rotate-6 shadow-[2px_2px_0px_#2B213A] transition-transform text-lg" title="Pixel Heart">
+              💖
+            </button>
+<!-- Holographic Butterfly -->
+<button class="w-12 h-12 rounded-xl bg-baby-blue border-2 border-ink-dark flex items-center justify-center hover:scale-110 hover:-rotate-6 shadow-[2px_2px_0px_#2B213A] transition-transform text-lg" title="Butterfly">
+              🦋
+            </button>
+<!-- Retro Flip Phone -->
+<button class="w-12 h-12 rounded-xl bg-mint-pop border-2 border-ink-dark flex items-center justify-center hover:scale-110 hover:rotate-6 shadow-[2px_2px_0px_#2B213A] transition-transform text-lg" title="Flip Phone">
+              📱
+            </button>
+<!-- Glitter Cherries -->
+<button class="w-12 h-12 rounded-xl bg-sparkle-coral/70 border-2 border-ink-dark flex items-center justify-center hover:scale-110 hover:-rotate-6 shadow-[2px_2px_0px_#2B213A] transition-transform text-lg" title="Cherries">
+              🍒
+            </button>
+<!-- Sparkly Smiley -->
+<button class="w-12 h-12 rounded-xl bg-sticker-yellow border-2 border-ink-dark flex items-center justify-center hover:scale-110 hover:rotate-6 shadow-[2px_2px_0px_#2B213A] transition-transform text-lg" title="Smiley">
+              ✨
+            </button>
+<!-- CUTE Badge -->
+<button class="col-span-2 h-12 rounded-xl bg-bubblegum-hot text-chrome-shine border-2 border-ink-dark font-label-md text-label-md flex items-center justify-center hover:scale-105 shadow-[2px_2px_0px_#2B213A] transition-transform uppercase tracking-wider">
+              ★ CUTE ★
+            </button>
+<!-- BFF Badge -->
+<button class="col-span-2 h-10 rounded-xl bg-cyber-sky text-ink-dark border-2 border-ink-dark font-label-md text-label-md flex items-center justify-center hover:scale-105 shadow-[2px_2px_0px_#2B213A] transition-transform">
+              BFF 4EVER
+            </button>
+<!-- ANGEL Badge -->
+<button class="col-span-2 h-10 rounded-xl bg-lilac-dream text-ink-dark border-2 border-ink-dark font-label-md text-label-md flex items-center justify-center hover:scale-105 shadow-[2px_2px_0px_#2B213A] transition-transform">
+              ʚ ANGEL ɞ
+            </button>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-2 text-center">Drag or click any sticker to stamp onto canvas</p>
+</div>
+</div>
+</aside>
+<!-- CENTER CANVAS WORK AREA (Scrapbook Desk Surface) -->
+<main class="flex-1 retro-grid-bg relative flex flex-col items-center justify-center p-4 lg:p-6 overflow-y-auto">
+<!-- Ambient Sparkle Badges floating on canvas desk -->
+<div class="absolute top-6 left-8 bg-surface-container-lowest/80 backdrop-blur-sm border border-ink-dark rounded-full px-3 py-1 font-label-sm text-label-sm text-ink-dark flex items-center gap-1 shadow-[2px_2px_0px_#2B213A]">
+<span class="w-2 h-2 rounded-full bg-mint-pop inline-block"></span>
+<span>Canvas Zoom: 100%</span>
+</div>
+<div class="absolute top-6 right-8 hidden xl:flex items-center gap-2 bg-surface-container-lowest/90 px-3 py-1 rounded-full border-2 border-ink-dark shadow-[2px_2px_0px_#2B213A]">
+<span class="font-label-sm text-label-sm text-ink-dark">Strip Preset: 1200 × 3600 px (300 DPI HQ)</span>
+</div>
+<!-- THE PHOTOSTRIP CARD (Elevated Scrapbook Stage) -->
+<div class="relative my-auto transition-transform duration-300">
+<!-- Washi Tape Accents (Top Left & Top Right) -->
+<div class="absolute -top-3.5 -left-4 w-20 h-6 holo-tape -rotate-12 z-30 border border-ink-dark/20 rounded-xs"></div>
+<div class="absolute -top-3 -right-4 w-20 h-6 holo-tape rotate-12 z-30 border border-ink-dark/20 rounded-xs"></div>
+<!-- The Physical Photostrip Container -->
+<div class="w-64 sm:w-72 md:w-80 bg-white p-3.5 sm:p-4 rounded-xl border-2 border-ink-dark shadow-[8px_8px_0px_0px_#2B213A] relative flex flex-col items-center gap-3">
+<!-- Top Header on Strip Card: Retro Date & Stars -->
+<div class="w-full flex justify-between items-center px-1 text-ink-dark border-b border-ink-dark/15 pb-1.5 font-label-sm text-label-sm">
+<span class="tracking-widest flex items-center gap-1 font-bold">
+<span>★</span>
+<span>OCT 2026</span>
+<span>★</span>
+</span>
+<span class="bg-surface-container-high px-1.5 py-0.5 rounded text-[9px] font-mono border border-ink-dark/30">BOOTH #04</span>
+</div>
+<!-- PHOTO FRAME 1 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden border-2 border-ink-dark bg-surface-container-high group shadow-[inset_0_1px_3px_rgba(0,0,0,0.2)]">
+<img class="w-full h-full object-cover" data-alt="A fashionable young person with early 2000s styled hair smiling brightly in a high-key vintage digital photobooth session. The lighting is soft and flattering with gentle warm pink tones, clean reflections, and vibrant playful retro cyber mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqrLWZOlIfDsiDFTy13RT-ksEl6u-Vxe0XB0CXgM7DVqEBjDPxH97pJd6ZaRO5FpLFWLzXZUHH7KUJCDPCYqIQlT6OneoFmWoAWR8JuyISJwHdkgyph38qV3gLBkU4Ee50QI_waHCb_Q6_bllGJNezkddbIsp1RU2fDaqZulo9RMgLZ5aD61qGUTnmuNWVUSkFR97kdMnmN7ZkYR8N6Goo3AKe3OgJtrDpaXn4sFEf16n_oNhp1R5bjw"/>
+<div class="absolute bottom-1 right-1.5 px-1 bg-ink-dark/70 backdrop-blur-xs rounded text-[9px] text-white font-mono">01</div>
+<!-- Small Corner Heart Stamp -->
+<div class="absolute top-1 left-1 text-xs select-none drop-shadow">💖</div>
+</div>
+<!-- PHOTO FRAME 2 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden border-2 border-ink-dark bg-surface-container-high group shadow-[inset_0_1px_3px_rgba(0,0,0,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Two best friends posing playfully with peace signs in a bright Y2K style instant photo booth. The frame has warm nostalgic retro pastel lighting with hints of magenta and baby blue, capturing an expressive, spontaneous candid moment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCihjHHA9K3Af6adSGMAU1xB7NCOLSwnTT1L8C5Vb_CPIaKcwruxUvu9G-TUVvQ9WA5wlHyU3xsN3tqM1_AlJux8rojoyHxTRB1j-Zkasrnm8CE8DHh6Ej_7HBBeqCI2cish0Ky-TvDJCKrKUD6M2KwJLTAug_0JClipKbpDNFy9nzJJNl3PNimxWH5YdEwforw2lKxdyhSDSDkjVE7GS_BSkBsHGgiuDzcb9CY1u9Ik38La-pmtd5PaA"/>
+<div class="absolute bottom-1 right-1.5 px-1 bg-ink-dark/70 backdrop-blur-xs rounded text-[9px] text-white font-mono">02</div>
+</div>
+<!-- PHOTO FRAME 3 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden border-2 border-ink-dark bg-surface-container-high group shadow-[inset_0_1px_3px_rgba(0,0,0,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Close-up joyful portrait of a girl holding a retro silver flip phone near her cheek, winking with playful retro cyber Y2K stickers in the background. The lighting is crisp and glossy with nostalgic warm pastel tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuWkbV1lEblZUmgbwjF1idfXw6BCsV3t5rQI_WI1M7K7VI_nQ822bo5k7foBzlL_kk-2WknxySHfGAkP7bb8li3u-ecK7oa41mHZ4yJRed4AL1C6vRyxriWL3aa50KY6hnomD0aUOdOqE1d-7zzBoV8ygZwZUg_Llb8hMH-WBT5NJqnMOpbupJDrynZYnc7QDpjbTmQp-auwd8wc3Ybr_0-c_agF0vvpdFlljXDKlMVpH4Pg7Wm3fVA"/>
+<div class="absolute bottom-1 right-1.5 px-1 bg-ink-dark/70 backdrop-blur-xs rounded text-[9px] text-white font-mono">03</div>
+</div>
+<!-- PHOTO FRAME 4 -->
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden border-2 border-ink-dark bg-surface-container-high group shadow-[inset_0_1px_3px_rgba(0,0,0,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Cute candid photobooth portrait of friends wearing matching metallic butterfly hair clips, laughing together under soft pastel flash lighting with high key clarity and clean 2000s aesthetic vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQsiUKqeHn4W1FEkKfFvv04G_ezwGTiFgBbeTXGBeAGrMF61W68ymdTFAAGZPhLC3Z_X-duoVmfpolnlSA7vH4gphg3nBNHsX-TuxmT6leBmTdS758EWTVkGd0M0eOwn5BP19lLlMCygkDeU78zppsMu1nLb0z6RNCJSnaRW976JkpMhbYZggq1nmA4KGSROdWwi0q9PqD6JQRMZ5c9tirZ8Ha1ZqrFfP6QWze5gnK8bC1vbEDkuc6ug"/>
+<div class="absolute bottom-1 right-1.5 px-1 bg-ink-dark/70 backdrop-blur-xs rounded text-[9px] text-white font-mono">04</div>
+</div>
+<!-- ON-CANVAS ACTIVE STICKER (Selected Element with Handles) -->
+<!-- Cyber Star with Transformation Controls placed across Frame 2 & 3 -->
+<div class="absolute top-[42%] -right-5 z-40 cursor-grab select-none">
+<!-- Active Bounding Marquee -->
+<div class="relative p-1 border-2 border-dashed border-primary bg-primary/10 rounded-lg">
+<!-- Rotation Stem & Top Handle -->
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 flex flex-col items-center">
+<div class="w-4 h-4 rounded-full bg-bubblegum-hot border-2 border-ink-dark flex items-center justify-center cursor-alias shadow-[1px_1px_0px_#2B213A]">
+<span class="material-symbols-outlined text-[10px] text-white font-bold" data-icon="refresh">refresh</span>
+</div>
+<div class="w-0.5 h-3 bg-primary"></div>
+</div>
+<!-- Corner Scale Handles -->
+<span class="absolute -top-1.5 -left-1.5 w-3 h-3 rounded-full bg-white border-2 border-ink-dark cursor-nwse-resize"></span>
+<span class="absolute -top-1.5 -right-1.5 w-3 h-3 rounded-full bg-white border-2 border-ink-dark cursor-nesw-resize"></span>
+<span class="absolute -bottom-1.5 -left-1.5 w-3 h-3 rounded-full bg-white border-2 border-ink-dark cursor-nesw-resize"></span>
+<span class="absolute -bottom-1.5 -right-1.5 w-3 h-3 rounded-full bg-white border-2 border-ink-dark cursor-nwse-resize"></span>
+<!-- Delete Trash Bubble Icon -->
+<button class="absolute -top-3 -right-8 w-6 h-6 rounded-full bg-error border-2 border-ink-dark text-white flex items-center justify-center shadow-[1px_1px_0px_#2B213A] hover:scale-110 active:scale-90 transition-transform" title="Delete Sticker">
+<span class="material-symbols-outlined text-[13px]" data-icon="delete">delete</span>
+</button>
+<!-- Sticker Graphic -->
+<div class="text-4xl filter drop-shadow-[2px_3px_0px_rgba(43,33,58,0.4)] hover:scale-105 transition-transform">
+                ⭐
+              </div>
+</div>
+</div>
+<!-- Additional Static Decorative Stamps on photostrip margins -->
+<div class="absolute top-[18%] -left-3 text-2xl rotate-12 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.2)]">
+            🍒
+          </div>
+<div class="absolute bottom-[16%] -left-4 bg-bubblegum-hot text-white border-2 border-ink-dark px-2 py-0.5 rounded-full font-label-sm text-[10px] -rotate-6 shadow-[2px_2px_0px_#2B213A]">
+            ★ ANGEL ★
+          </div>
+<div class="absolute bottom-[28%] -right-3 text-2xl -rotate-12 drop-shadow">
+            🦋
+          </div>
+<!-- Bottom Card Stamp & Barcode -->
+<div class="w-full pt-1 pb-1 flex flex-col items-center justify-center gap-1 border-t border-ink-dark/15 mt-1">
+<span class="text-primary font-headline-md text-headline-md tracking-tighter drop-shadow-[1px_1px_0px_#2B213A]">PIXEL POP</span>
+<div class="flex items-center gap-1 text-[8px] font-mono tracking-widest text-on-surface-variant">
+<span>||| | | |||| | ||| | || |||</span>
+<span class="ml-1 font-bold">2026.10.28</span>
+</div>
+</div>
+</div>
+<!-- Bottom Tape -->
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-28 h-5 holo-tape border border-ink-dark/20 rounded-xs shadow-sm"></div>
+</div>
+</main>
+</div>
+<!-- BOTTOM PHOTO TRAY (Fixed Reel for Swapping & Retaking) -->
+<footer class="h-28 bg-surface-container border-t-2 border-ink-dark z-30 px-space-md py-2 flex items-center justify-between gap-space-md shadow-[0_-4px_0_0_rgba(43,33,58,0.06)] flex-shrink-0">
+<!-- Reel Info & Retake Master -->
+<div class="flex items-center gap-3 flex-shrink-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest border-2 border-ink-dark flex items-center justify-center text-primary shadow-[2px_2px_0px_#2B213A]">
+<span class="material-symbols-outlined text-[22px]" data-icon="photo_library">photo_library</span>
+</div>
+<div class="hidden sm:block">
+<span class="font-title-md text-title-md text-ink-dark block leading-none">Photo Reel</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Drag to swap frame slots</span>
+</div>
+</div>
+<!-- The 4 Source Photos Reel -->
+<div class="flex items-center gap-3 overflow-x-auto py-1 px-1">
+<!-- Slot 1 -->
+<div class="relative group cursor-grab">
+<div class="w-16 h-16 sm:w-18 sm:h-18 rounded-xl border-2 border-primary bg-white overflow-hidden p-0.5 shadow-[2px_2px_0px_#2B213A] ring-2 ring-primary/40">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Close-up portrait of a girl posing playfully with retro styling in a photobooth, illuminated by bright pastel lighting with cute cyber vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOHPaoB26p6QoRyXH7tQMLU2JS_6xMzcyTjudWweOYOqlMHVIP8-STxRSjdCRP1O0DM2oYMp22BdUFlPzdra_rnRfPO7Yaq81AXFvXiDUk5GZaJ_IU4PdVGJWv-FtnRduuD-VNSDXkNtN3O6OPcR-jEndkhtl3_vJcpDWomHwkpbi7nRxgtij9BiWYYqx0WpxLCPjMet82SmVhHFW5Hl5Im3Cw11Jvn7hd0zJwMCk022phbKR9j7G9kw"/>
+</div>
+<span class="absolute -top-1.5 -left-1.5 w-5 h-5 rounded-full bg-primary text-white font-label-sm text-[10px] border border-ink-dark flex items-center justify-center font-bold">1</span>
+<!-- Hover Quick Actions -->
+<button class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-ink-dark text-ink-dark flex items-center justify-center hover:bg-bubblegum-soft transition-colors shadow-[1px_1px_0px_#2B213A]" title="Quick Retake">
+<span class="material-symbols-outlined text-[13px]" data-icon="sync">sync</span>
+</button>
+</div>
+<!-- Slot 2 -->
+<div class="relative group cursor-grab">
+<div class="w-16 h-16 sm:w-18 sm:h-18 rounded-xl border-2 border-ink-dark bg-white overflow-hidden p-0.5 shadow-[2px_2px_0px_#2B213A] hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Two cheerful friends making peace signs in a bright nostalgic photo session with candy pink and sky blue colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANyAgllKnARDfdFN-Z5Lr9TMxxU95jyD2X4mRNjhSX6ifRhNgTaXMZ0OBBHtDT_XIhLk-mdCqbA-EcbO2tnXExr68fI3zA5hPQsNTPuygiqi_r1ywCNzLr9rrnLGiXVYa8Ls3Y4BCTAFVqyoDjXCBCOKrtvPMmR9O8g_URd3YWSs17HJULYm2soqTAZwoMTSCl2t9h_k8HZz2twszLrVG555aP3piLFjBxn9MexeB1imadv1egO0nOqA"/>
+</div>
+<span class="absolute -top-1.5 -left-1.5 w-5 h-5 rounded-full bg-ink-dark text-white font-label-sm text-[10px] border border-ink-dark flex items-center justify-center font-bold">2</span>
+<button class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-ink-dark text-ink-dark flex items-center justify-center hover:bg-bubblegum-soft transition-colors shadow-[1px_1px_0px_#2B213A]" title="Quick Retake">
+<span class="material-symbols-outlined text-[13px]" data-icon="sync">sync</span>
+</button>
+</div>
+<!-- Slot 3 -->
+<div class="relative group cursor-grab">
+<div class="w-16 h-16 sm:w-18 sm:h-18 rounded-xl border-2 border-ink-dark bg-white overflow-hidden p-0.5 shadow-[2px_2px_0px_#2B213A] hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Retro portrait of a smiling girl with a silver phone in a cute 2000s photobooth setting with warm flash glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArMwRfmUHCDY_BUqXooIvtOBtgqiD7XuC2gzIsTp4uh-9rgLyiht528k4YmQlAxlkJ6iC0BVCmMc6jJ_PL3Hcjepd2P5jNLUBWpIYaeQORDCSLSqDDs5ZWW-Fs6_qAqFK7KWWFuHMQKxSE6SzoiXCBWtn2roaghvCg1U3UfImPA_H0_bt9kDZC53sB93B_zpwQmGe3chJF8XSLkjq61uYtBLM6Xa9CX4ORMWx--mWPp4ThdVM3hYjW2g"/>
+</div>
+<span class="absolute -top-1.5 -left-1.5 w-5 h-5 rounded-full bg-ink-dark text-white font-label-sm text-[10px] border border-ink-dark flex items-center justify-center font-bold">3</span>
+<button class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-ink-dark text-ink-dark flex items-center justify-center hover:bg-bubblegum-soft transition-colors shadow-[1px_1px_0px_#2B213A]" title="Quick Retake">
+<span class="material-symbols-outlined text-[13px]" data-icon="sync">sync</span>
+</button>
+</div>
+<!-- Slot 4 -->
+<div class="relative group cursor-grab">
+<div class="w-16 h-16 sm:w-18 sm:h-18 rounded-xl border-2 border-ink-dark bg-white overflow-hidden p-0.5 shadow-[2px_2px_0px_#2B213A] hover:border-primary transition-colors">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Happy friends with butterfly hair clips laughing in a vintage cyber photo studio with pastel tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAhKXyj4yNVC_5zKgEjt1RygIAtgqoIojboZIviI_eJBBNQzCXMcLEJ8yQL3pxwzL9wtvhEj0zksux8s03IVEIM1fTR84847cjLq4OOITIk6p4levy5F880YBp8K50N16THjKXrNCup4jnvDm8k8OAQl1RU6QAbE0lQyWjQv7E6fSbFAutst_iNP5bMgaLPWjbmv_dU_DliPOSi5JYxC5MfonexJVYgMt_Mhh1kMXGgMyMdX8pqtw_VA"/>
+</div>
+<span class="absolute -top-1.5 -left-1.5 w-5 h-5 rounded-full bg-ink-dark text-white font-label-sm text-[10px] border border-ink-dark flex items-center justify-center font-bold">4</span>
+<button class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-surface-container-lowest border-2 border-ink-dark text-ink-dark flex items-center justify-center hover:bg-bubblegum-soft transition-colors shadow-[1px_1px_0px_#2B213A]" title="Quick Retake">
+<span class="material-symbols-outlined text-[13px]" data-icon="sync">sync</span>
+</button>
+</div>
+</div>
+<!-- Retake Session Action CTA -->
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-full border-2 border-ink-dark bg-mint-pop text-ink-dark font-title-md text-title-md shadow-[2px_2px_0px_#2B213A] hover:scale-105 active:translate-y-0.5 transition-all">
+<span class="material-symbols-outlined text-[18px]" data-icon="videocam">videocam</span>
+<span class="hidden md:inline">Retake All Photos</span>
+<span class="md:hidden">Retake</span>
+</button>
+</div>
+</footer>
+</body></html>

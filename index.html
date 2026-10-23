@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>PIXEL POP ★ Y2K Scrapbook Photobooth</title>
+  <meta name="description" content="Instant Y2K Cyber Scrapbook Photobooth. Snap 4 poses via webcam or upload photos, add retro stickers, vintage flash filters and export high-res PNG without account!"/>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#ede4ff",
+            "on-surface": "#1d1733",
+            "chrome-shine": "#FFFFFF",
+            "on-background": "#1d1733",
+            "bubblegum-soft": "#FFB7D5",
+            "on-secondary-fixed-variant": "#004d63",
+            "surface-container": "#f2ebff",
+            "surface-dim": "#dfd5fb",
+            "tertiary": "#5f559a",
+            "secondary": "#006783",
+            "on-tertiary-fixed": "#1b0c53",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#6e0044",
+            "inverse-surface": "#332c49",
+            "secondary-fixed": "#bce9ff",
+            "ink-dark": "#2B213A",
+            "error": "#ba1a1a",
+            "cyber-sky": "#70D6FF",
+            "lilac-dream": "#BDB2FF",
+            "tertiary-container": "#a096e1",
+            "outline-variant": "#dcbfc9",
+            "background": "#fdf7ff",
+            "mint-pop": "#A0E7E5",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#564149",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#ac2471",
+            "on-primary-fixed-variant": "#8c0058",
+            "chrome-edge": "#94A3B8",
+            "on-primary-fixed": "#3d0024",
+            "bubblegum-hot": "#FF69B4",
+            "tertiary-fixed-dim": "#c8bfff",
+            "secondary-fixed-dim": "#6cd3fc",
+            "surface": "#fdf7ff",
+            "on-secondary-fixed": "#001f2a",
+            "canvas-bg": "#F8F7FF",
+            "primary-fixed": "#ffd8e6",
+            "surface-bright": "#fdf7ff",
+            "primary-container": "#ff69b4",
+            "inverse-on-surface": "#f5eeff",
+            "inverse-primary": "#ffb0d0",
+            "chrome-silver": "#E2E8F0",
+            "tertiary-fixed": "#e5deff",
+            "on-primary": "#ffffff",
+            "baby-blue": "#B4E4FF",
+            "surface-variant": "#e7deff",
+            "primary-fixed-dim": "#ffb0d0",
+            "on-secondary-container": "#005c75",
+            "sparkle-coral": "#FF85A1",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#e7deff",
+            "on-tertiary-container": "#362c6f",
+            "outline": "#897179",
+            "surface-container-low": "#f8f1ff",
+            "surface-tint": "#ac2471",
+            "sticker-yellow": "#FFD166",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "secondary-container": "#70d6ff"
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1rem",
+            "gutter-sm": "0.75rem",
+            "gutter-lg": "1.5rem",
+            "margin": "1.5rem",
+            "margin-mobile": "1rem",
+            "margin-desktop": "2.5rem"
+          },
+          fontFamily: {
+            "headline-xl": ["Epilogue", "sans-serif"],
+            "headline-lg": ["Epilogue", "sans-serif"],
+            "headline-md": ["Epilogue", "sans-serif"],
+            "title-lg": ["Space Grotesk", "sans-serif"],
+            "title-md": ["Space Grotesk", "sans-serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Space Grotesk", "sans-serif"],
+            "label-sm": ["Space Grotesk", "sans-serif"]
+          },
+          fontSize: {
+            "headline-xl": ["44px", { "lineHeight": "52px", "fontWeight": "800" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }],
+            "title-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "label-md": ["11px", { "lineHeight": "15px", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./src/styles.css"/>
+</head>
+<body class="bg-background text-on-surface antialiased bg-dot-matrix min-h-screen flex flex-col selection:bg-bubblegum-hot selection:text-white">
+
+  <!-- ================= TOP SHARED APP BAR ================= -->
+  <header class="w-full bg-surface-container border-b-2 border-ink-dark shadow-[0_4px_0_0_#2B213A] sticky top-0 z-50">
+    <div class="flex justify-between items-center w-full px-space-md md:px-margin-desktop py-2.5 max-w-7xl mx-auto">
+      <!-- Left: Logo & Wizard Indicator -->
+      <div class="flex items-center gap-space-lg">
+        <a class="flex items-center gap-space-xs group cursor-pointer" id="nav-brand" href="#home">
+          <span class="text-headline-md font-headline-md font-extrabold text-primary tracking-tight drop-shadow-[2px_2px_0px_#2B213A] group-hover:scale-105 transition-transform">
+            PIXEL POP ★
+          </span>
+          <span class="inline-block bg-mint-pop text-ink-dark border-2 border-ink-dark px-1.5 py-0.5 rounded-full text-label-sm font-label-sm shadow-y2k-sm -rotate-6">
+            v2.4
+          </span>
+        </a>
+
+        <!-- Breadcrumb Process Wizard -->
+        <div class="hidden lg:flex items-center bg-surface-container-lowest border-2 border-ink-dark rounded-full px-space-sm py-1 shadow-y2k-sm" id="wizard-steps">
+          <button class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-inner transition-all" id="step-btn-1">
+            <span class="w-4 h-4 rounded-full bg-chrome-shine text-primary flex items-center justify-center text-[10px] font-extrabold">1</span>
+            <span>Capture</span>
+          </button>
+          <span class="text-ink-dark px-1">➔</span>
+          <button class="flex items-center gap-1.5 px-space-sm py-0.5 text-on-surface-variant font-label-md text-label-md transition-all" id="step-btn-2">
+            <span class="w-4 h-4 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center text-[10px]">2</span>
+            <span>Edit</span>
+          </button>
+          <span class="text-ink-dark px-1 opacity-50">➔</span>
+          <button class="flex items-center gap-1.5 px-space-sm py-0.5 text-on-surface-variant font-label-md text-label-md transition-all" id="step-btn-3">
+            <span class="w-4 h-4 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center text-[10px]">3</span>
+            <span>Export</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Center: Navigation Links -->
+      <nav class="hidden md:flex items-center gap-space-lg">
+        <button class="text-on-surface-variant font-bold hover:text-primary transition-colors text-title-md font-title-md" id="nav-home">Home</button>
+        <button class="text-primary font-bold border-b-2 border-primary pb-0.5 text-title-md font-title-md flex items-center gap-1" id="nav-studio">
+          <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+          <span>Studio</span>
+        </button>
+        <button class="text-on-surface-variant font-medium hover:text-primary transition-colors text-title-md font-title-md" id="nav-editor">Editor</button>
+        <button class="text-on-surface-variant font-medium hover:text-primary transition-colors text-title-md font-title-md" id="nav-templates">Templates</button>
+        <button class="text-on-surface-variant font-medium hover:text-primary transition-colors text-title-md font-title-md" id="nav-stickers">Stickers</button>
+      </nav>
+
+      <!-- Right: Action Cluster -->
+      <div class="flex items-center gap-space-sm">
+        <button class="p-1.5 rounded-full border-2 border-ink-dark bg-surface-container-high hover:bg-surface-bright text-ink-dark shadow-y2k-sm transition-all" id="btn-sound-toggle" title="Toggle Shutter & Sound FX">
+          <span class="material-symbols-outlined text-[18px]" id="sound-icon">volume_up</span>
+        </button>
+        <button class="p-1.5 rounded-full border-2 border-ink-dark bg-mint-pop text-ink-dark shadow-y2k-sm transition-all hover:scale-105" id="btn-open-help" title="Help & Tips">
+          <span class="material-symbols-outlined text-[18px]">help</span>
+        </button>
+        <button class="gloss-btn-primary border-2 border-ink-dark text-on-primary rounded-full px-space-md py-1.5 text-label-md font-label-md tracking-wider flex items-center gap-1.5 transition-transform" id="btn-start-booth">
+          <span class="material-symbols-outlined text-[16px]">videocam</span>
+          <span>Start Booth</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= VIEW 1: HOME / LANDING PAGE ================= -->
+  <main class="view-panel flex-1 flex-col" id="view-home">
+    <!-- Hero Section -->
+    <section class="relative pt-space-lg pb-space-xl overflow-hidden">
+      <div class="max-w-7xl mx-auto px-space-md md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 flex flex-col gap-space-md">
+          <div class="inline-flex items-center gap-2 self-start bg-surface-container-high border-2 border-ink-dark px-3.5 py-1.5 rounded-full shadow-y2k-sm">
+            <span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span>
+            <span class="text-label-md font-label-md text-ink-dark">Instant Nostalgia Camera for Web & Mobile</span>
+          </div>
+
+          <h1 class="text-headline-xl font-headline-xl text-ink-dark tracking-tight leading-tight">
+            Instant Y2K Photobooth in Your Browser <span class="text-bubblegum-hot drop-shadow-[2px_2px_0px_#2B213A]">★</span> No Account Needed!
+          </h1>
+
+          <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl">
+            Snap 4 poses via webcam or upload photos, deck them out in retro stickers, vintage flash filters & glitter frames in seconds.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+            <button class="gloss-btn-primary border-2 border-ink-dark text-on-primary rounded-full px-space-lg py-3.5 text-title-md font-title-md tracking-wide flex items-center gap-2 hover:scale-105 transition-all shadow-y2k" id="hero-btn-start">
+              <span>★ Start Creating Now — It's Free!</span>
+              <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+            </button>
+            <button class="gloss-btn-secondary border-2 border-ink-dark text-ink-dark rounded-full px-space-lg py-3.5 text-title-md font-title-md tracking-wide flex items-center gap-2 hover:bg-surface-container-lowest transition-all shadow-y2k" id="hero-btn-templates">
+              <span class="material-symbols-outlined text-[20px]">style</span>
+              <span>Explore Scrapbook Styles</span>
+            </button>
+          </div>
+
+          <!-- Privacy Guarantee Badge -->
+          <div class="pt-space-xs flex items-center gap-2.5">
+            <div class="flex items-center justify-center w-6 h-6 rounded-full bg-mint-pop border-2 border-ink-dark text-ink-dark shadow-y2k-sm">
+              <span class="material-symbols-outlined text-[14px]">lock</span>
+            </div>
+            <p class="text-body-sm font-body-sm font-semibold text-ink-dark tracking-tight">
+              🔒 100% Client-Side Privacy — Photos Never Leave Your Device
+            </p>
+          </div>
+
+          <!-- Feature Tickers -->
+          <div class="grid grid-cols-3 gap-space-sm pt-space-sm max-w-lg">
+            <div class="bg-surface border-2 border-ink-dark p-2.5 rounded-lg shadow-y2k-sm text-center">
+              <p class="text-title-lg font-title-lg text-primary">0 sec</p>
+              <p class="text-label-sm font-label-sm text-on-surface-variant">Sign-Up Wait</p>
+            </div>
+            <div class="bg-surface border-2 border-ink-dark p-2.5 rounded-lg shadow-y2k-sm text-center">
+              <p class="text-title-lg font-title-lg text-secondary">300 DPI</p>
+              <p class="text-label-sm font-label-sm text-on-surface-variant">Print Quality</p>
+            </div>
+            <div class="bg-surface border-2 border-ink-dark p-2.5 rounded-lg shadow-y2k-sm text-center">
+              <p class="text-title-lg font-title-lg text-bubblegum-hot">50+ Y2K</p>
+              <p class="text-label-sm font-label-sm text-on-surface-variant">Deco Stickers</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photostrip Showcase Window -->
+        <div class="lg:col-span-5 relative flex justify-center items-center">
+          <div class="w-full max-w-md bg-surface-container-lowest border-2 border-ink-dark rounded-xl shadow-y2k-lg overflow-hidden">
+            <!-- Window Title Bar -->
+            <div class="bg-surface-variant border-b-2 border-ink-dark px-space-md py-2 flex items-center justify-between">
+              <div class="flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-full bg-bubblegum-hot border border-ink-dark"></span>
+                <span class="w-3 h-3 rounded-full bg-sticker-yellow border border-ink-dark"></span>
+                <span class="w-3 h-3 rounded-full bg-mint-pop border border-ink-dark"></span>
+                <span class="text-label-md font-label-md text-ink-dark font-bold ml-1">pixelpop_photobooth.exe</span>
+              </div>
+              <div class="w-4 h-4 border border-ink-dark bg-surface flex items-center justify-center text-[10px] font-bold">×</div>
+            </div>
+
+            <!-- Photostrip Workspace with Angled Strip -->
+            <div class="p-space-lg bg-surface-container-low flex flex-col items-center justify-center relative min-h-[460px]">
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-28 h-6 translucent-tape z-20 rotate-1 shadow-sm"></div>
+
+              <!-- Photostrip Sample Card -->
+              <div class="polaroid-strip bg-white border-2 border-ink-dark p-3 rounded-md rotate-2 w-60 flex flex-col gap-2 relative transition-transform hover:rotate-0 duration-300 cursor-pointer" id="hero-sample-strip">
+                <div class="flex justify-between items-center pb-1 border-b border-dashed border-ink-dark/30">
+                  <span class="text-[10px] font-bold text-primary">PIXEL POP ★ BOOTH</span>
+                  <span class="text-[9px] font-bold text-ink-dark bg-mint-pop px-1 rounded">OCT 2026</span>
+                </div>
+
+                <!-- 4 frames preview -->
+                <div class="aspect-[4/3] rounded bg-pink-100 border border-ink-dark overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover filter contrast-110 saturate-125" alt="Pose 1"/>
+                  <span class="absolute bottom-1 right-1 text-[8px] bg-black/70 text-white px-1 rounded font-mono">01 FLASH</span>
+                </div>
+                <div class="aspect-[4/3] rounded bg-purple-100 border border-ink-dark overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover filter contrast-110 saturate-125" alt="Pose 2"/>
+                  <span class="absolute bottom-1 right-1 text-[8px] bg-black/70 text-white px-1 rounded font-mono">02 CUTE</span>
+                </div>
+                <div class="aspect-[4/3] rounded bg-cyan-100 border border-ink-dark overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover filter contrast-110 saturate-125" alt="Pose 3"/>
+                  <span class="absolute bottom-1 right-1 text-[8px] bg-black/70 text-white px-1 rounded font-mono">03 SWEET</span>
+                </div>
+                <div class="aspect-[4/3] rounded bg-yellow-100 border border-ink-dark overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover filter contrast-110 saturate-125" alt="Pose 4"/>
+                  <span class="absolute bottom-1 right-1 text-[8px] bg-black/70 text-white px-1 rounded font-mono">04 FOREVER</span>
+                </div>
+
+                <div class="pt-1.5 text-center border-t border-dashed border-ink-dark/30">
+                  <span class="text-[10px] font-bold text-ink-dark">BESTIES FOREVER ★ 2026</span>
+                </div>
+
+                <!-- Floating interactive peelable stickers -->
+                <div class="absolute -top-3 -right-3 bg-sticker-yellow text-ink-dark border-2 border-ink-dark rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs shadow-y2k-sm sticker-wiggle">★</div>
+                <div class="absolute top-1/4 -left-4 bg-bubblegum-hot text-white border-2 border-ink-dark rounded-md px-1.5 py-0.5 text-[10px] font-bold shadow-y2k-sm -rotate-12 sticker-wiggle">🍒 CHERRY</div>
+                <div class="absolute bottom-16 -right-5 bg-cyber-sky text-ink-dark border-2 border-ink-dark rounded-md px-2 py-0.5 text-[10px] font-bold shadow-y2k-sm rotate-12 sticker-wiggle">✨ GLITTER</div>
+                <div class="absolute bottom-2 -left-3 bg-mint-pop text-ink-dark border-2 border-ink-dark rounded-full w-7 h-7 flex items-center justify-center text-xs shadow-y2k-sm sticker-wiggle">💖</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Steps Section -->
+    <section class="py-space-xl bg-surface-container border-y-2 border-ink-dark">
+      <div class="max-w-7xl mx-auto px-space-md md:px-margin-desktop">
+        <div class="text-center max-w-2xl mx-auto mb-space-lg">
+          <div class="inline-flex items-center gap-1.5 bg-mint-pop/50 border border-ink-dark px-3 py-1 rounded-full text-label-sm font-label-sm font-bold text-ink-dark mb-2">
+            <span>QUICK & SIMPLE ★ NO ACCOUNT</span>
+          </div>
+          <h2 class="text-headline-lg font-headline-lg text-ink-dark font-extrabold">Three Steps to Your Dream Strip</h2>
+          <p class="text-body-md font-body-md text-on-surface-variant">Capture authentic Y2K photobooth vibes in under 60 seconds directly from your browser.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <!-- Step 1 Card -->
+          <div class="bg-surface-container-lowest border-2 border-ink-dark rounded-2xl p-space-lg shadow-y2k flex flex-col justify-between">
+            <div>
+              <div class="inline-block bg-bubblegum-soft text-ink-dark border border-ink-dark px-2 py-0.5 rounded text-label-sm font-bold mb-3">STEP 01</div>
+              <div class="w-12 h-12 rounded-xl bg-baby-blue border-2 border-ink-dark flex items-center justify-center text-ink-dark mb-4 shadow-y2k-sm">
+                <span class="material-symbols-outlined text-[24px]">photo_camera</span>
+              </div>
+              <h3 class="text-title-lg font-title-lg text-ink-dark font-bold mb-2">1. Snap or Upload</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Turn on your webcam for the authentic 4-shot countdown timer, or drag & drop 4 favorite snapshots straight from your camera roll.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-ink-dark/20 text-label-sm font-label-sm font-bold text-primary flex items-center justify-between">
+              <span>Auto 3-Sec Flash Timer</span>
+              <span class="material-symbols-outlined text-[16px]">timer</span>
+            </div>
+          </div>
+
+          <!-- Step 2 Card -->
+          <div class="bg-surface-container-lowest border-2 border-ink-dark rounded-2xl p-space-lg shadow-y2k flex flex-col justify-between">
+            <div>
+              <div class="inline-block bg-sticker-yellow text-ink-dark border border-ink-dark px-2 py-0.5 rounded text-label-sm font-bold mb-3">STEP 02</div>
+              <div class="w-12 h-12 rounded-xl bg-lilac-dream border-2 border-ink-dark flex items-center justify-center text-ink-dark mb-4 shadow-y2k-sm">
+                <span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+              </div>
+              <h3 class="text-title-lg font-title-lg text-ink-dark font-bold mb-2">2. Scrapbook Editor</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Slap on 50+ peelable glitter stars, chrome hearts, cherry doodles, vintage flash glow filters, and cyber pixel frames.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-ink-dark/20 text-label-sm font-label-sm font-bold text-secondary flex items-center justify-between">
+              <span>Unlimited Stickers & Doodles</span>
+              <span class="material-symbols-outlined text-[16px]">stars</span>
+            </div>
+          </div>
+
+          <!-- Step 3 Card -->
+          <div class="bg-surface-container-lowest border-2 border-ink-dark rounded-2xl p-space-lg shadow-y2k flex flex-col justify-between">
+            <div>
+              <div class="inline-block bg-mint-pop text-ink-dark border border-ink-dark px-2 py-0.5 rounded text-label-sm font-bold mb-3">STEP 03</div>
+              <div class="w-12 h-12 rounded-xl bg-bubblegum-hot border-2 border-ink-dark flex items-center justify-center text-white mb-4 shadow-y2k-sm">
+                <span class="material-symbols-outlined text-[24px]">download</span>
+              </div>
+              <h3 class="text-title-lg font-title-lg text-ink-dark font-bold mb-2">3. Download PNG</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">
+                Export crisp 300 DPI high-resolution strips ready for Instagram Stories, TikTok, digital scrapbooking, or mini physical photo prints!
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-ink-dark/20 text-label-sm font-label-sm font-bold text-bubblegum-hot flex items-center justify-between">
+              <span>Print Ready / No Watermark</span>
+              <span class="material-symbols-outlined text-[16px]">print</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticker Tray & Purikura Teaser Section -->
+    <section class="py-space-xl">
+      <div class="max-w-7xl mx-auto px-space-md md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+        <!-- Interactive Sticker Tray Card -->
+        <div class="lg:col-span-6 bg-surface-container border-2 border-ink-dark rounded-2xl p-space-md shadow-y2k-lg">
+          <div class="flex items-center justify-between pb-3 border-b-2 border-ink-dark mb-4">
+            <span class="text-title-md font-title-md font-extrabold text-ink-dark flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-bubblegum-hot"></span>
+              <span>Official Cyber Sticker Tray</span>
+            </span>
+            <span class="text-label-sm font-label-sm bg-white px-2 py-0.5 rounded border border-ink-dark font-bold">Click to Stamp</span>
+          </div>
+
+          <div class="grid grid-cols-4 gap-2.5" id="home-sticker-grid">
+            <!-- Dynamically populated or static teaser -->
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="🍒">
+              <span class="text-2xl">🍒</span>
+              <span class="text-[10px] font-bold text-ink-dark">Cherry</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="✨">
+              <span class="text-2xl">✨</span>
+              <span class="text-[10px] font-bold text-ink-dark">Gleam</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="🦋">
+              <span class="text-2xl">🦋</span>
+              <span class="text-[10px] font-bold text-ink-dark">Butterfly</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="💾">
+              <span class="text-2xl">💾</span>
+              <span class="text-[10px] font-bold text-ink-dark">Floppy</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="💖">
+              <span class="text-2xl">💖</span>
+              <span class="text-[10px] font-bold text-ink-dark">Heart</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="💿">
+              <span class="text-2xl">💿</span>
+              <span class="text-[10px] font-bold text-ink-dark">Mini CD</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="👾">
+              <span class="text-2xl">👾</span>
+              <span class="text-[10px] font-bold text-ink-dark">Invader</span>
+            </button>
+            <button class="bg-white border-2 border-ink-dark p-3 rounded-xl flex flex-col items-center justify-center gap-1 shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-transform" data-sticker="⭐">
+              <span class="text-2xl">⭐</span>
+              <span class="text-[10px] font-bold text-ink-dark">Star</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Purikura Explainer -->
+        <div class="lg:col-span-6 flex flex-col gap-space-sm">
+          <div class="inline-flex items-center gap-1.5 self-start bg-secondary-fixed text-ink-dark border border-ink-dark px-3 py-1 rounded-full text-label-sm font-bold">
+            <span>TACTILE RETRO CONTROLS</span>
+          </div>
+          <h2 class="text-headline-lg font-headline-lg text-ink-dark font-extrabold leading-tight">
+            Early 2000s Purikura Fun, Rebuilt for Modern Screens
+          </h2>
+          <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+            Remember Japanese sticker booths and bedroom scrapbook binders? Pixel Pop brings the same tactile, dimensional joy directly to your browser with zero friction.
+          </p>
+          <ul class="flex flex-col gap-2.5 pt-2 text-body-sm font-body-sm text-ink-dark">
+            <li class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-mint-pop border border-ink-dark flex items-center justify-center text-xs font-bold">✓</span>
+              <span><strong>Vintage Flash Emulation:</strong> Recreate the iconic harsh, flattering flash look of classic digital cameras.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-cyber-sky border border-ink-dark flex items-center justify-center text-xs font-bold">✓</span>
+              <span><strong>Glitter & Holographic Borders:</strong> Switch between pastel pinks, holo foil, and retro cyber grid edges.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-sticker-yellow border border-ink-dark flex items-center justify-center text-xs font-bold">✓</span>
+              <span><strong>Digital Label Maker:</strong> Stamp your name, bestie codes, date-stamps, and custom cyber fonts across every strip.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Bar -->
+    <section class="py-space-xl bg-gradient-to-r from-bubblegum-soft via-surface-container-high to-baby-blue border-t-2 border-ink-dark text-center">
+      <div class="max-w-4xl mx-auto px-space-md">
+        <h2 class="text-headline-lg font-headline-lg text-ink-dark font-extrabold mb-3">Ready to Snap Your Retro Photostrip?</h2>
+        <p class="text-body-md font-body-md text-on-surface-variant mb-6">No signup, no waiting. Jump into the booth, smile for 4 rapid shots, decorate with cute stickers, and export instantly.</p>
+        <div class="flex flex-wrap justify-center gap-space-md">
+          <button class="gloss-btn-primary border-2 border-ink-dark text-on-primary rounded-full px-space-lg py-3.5 text-title-md font-title-md tracking-wide shadow-y2k hover:scale-105 transition-all flex items-center gap-2" id="bottom-btn-camera">
+            <span class="material-symbols-outlined text-[20px]">videocam</span>
+            <span>Launch Webcam Booth ★</span>
+          </button>
+          <button class="gloss-btn-secondary border-2 border-ink-dark text-ink-dark rounded-full px-space-lg py-3.5 text-title-md font-title-md tracking-wide shadow-y2k hover:bg-surface transition-all flex items-center gap-2" id="bottom-btn-upload">
+            <span class="material-symbols-outlined text-[20px]">folder_open</span>
+            <span>Upload 4 Photos Instead</span>
+          </button>
+        </div>
+        <p class="text-[11px] font-label-sm text-ink-dark/70 mt-3">🔒 100% PRIVATE & RUNS COMPLETELY IN YOUR BROWSER</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= VIEW 2: STUDIO (CAPTURE & UPLOAD) ================= -->
+  <main class="view-panel flex-1 flex-col max-w-7xl mx-auto w-full px-space-md md:px-margin-desktop py-space-md gap-space-md" id="view-studio">
+    <!-- Top Mode Switcher Bar -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low border-2 border-ink-dark rounded-2xl p-space-sm shadow-y2k">
+      <!-- Mode Toggle Buttons -->
+      <div class="flex items-center bg-surface-container-highest p-1 rounded-full border-2 border-ink-dark shadow-inner w-full sm:w-auto">
+        <button class="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-space-md py-1.5 rounded-full bg-cyber-sky border-2 border-ink-dark text-ink-dark font-title-md text-title-md shadow-y2k-sm transition-all" id="tab-webcam">
+          <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+          <span>📸 Webcam Photobooth</span>
+        </button>
+        <button class="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-space-md py-1.5 rounded-full text-on-surface-variant font-title-md text-title-md hover:text-primary transition-all" id="tab-upload">
+          <span class="material-symbols-outlined text-[18px]">folder_open</span>
+          <span>📁 Upload Photos</span>
+        </button>
+      </div>
+
+      <!-- Studio Live Status & Sound Toggle -->
+      <div class="flex items-center justify-between sm:justify-end gap-space-md w-full sm:w-auto px-space-xs">
+        <div class="flex items-center gap-2 text-ink-dark font-label-md text-label-md bg-mint-pop/50 border border-ink-dark px-space-sm py-1 rounded-full">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+          <span id="session-status-text">Live Studio Session Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Stage: Viewfinder + Photostrip Tray Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+      <!-- Left Column: Camera / Upload Stage -->
+      <section class="lg:col-span-8 flex flex-col gap-space-sm">
+        <!-- Retro Window Shell -->
+        <div class="bg-surface-container-lowest border-2 border-ink-dark rounded-2xl shadow-y2k-lg overflow-hidden flex flex-col">
+          <!-- Window Title Bar -->
+          <div class="bg-gradient-to-r from-bubblegum-soft via-lilac-dream to-baby-blue border-b-2 border-ink-dark px-space-md py-2 flex items-center justify-between">
+            <div class="flex items-center gap-1.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-sparkle-coral border border-ink-dark inline-block shadow-sm"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-sticker-yellow border border-ink-dark inline-block shadow-sm"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-mint-pop border border-ink-dark inline-block shadow-sm"></span>
+              <span class="ml-2 font-headline-md text-[13px] text-ink-dark font-bold tracking-wider uppercase flex items-center gap-1">
+                <span class="material-symbols-outlined text-[14px]">videocam</span>
+                <span id="viewfinder-window-title">DIGITAL-EYE 2000 PRO // WEBCAM STREAM</span>
+              </span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="bg-surface-bright/80 text-ink-dark text-[11px] font-mono px-2 py-0.5 rounded border border-ink-dark/40 font-bold">4:3 RATIO</span>
+              <button class="w-5 h-5 bg-bubblegum-hot border border-ink-dark rounded flex items-center justify-center text-white hover:bg-primary transition-colors text-[10px] font-bold">✕</button>
+            </div>
+          </div>
+
+          <!-- Video Viewfinder Screen -->
+          <div class="relative bg-ink-dark min-h-[360px] md:min-h-[440px] flex items-center justify-center overflow-hidden" id="viewfinder-screen">
+            <!-- Active Video Element -->
+            <video class="w-full h-full object-cover transition-transform" id="webcam-video" autoplay playsinline muted style="transform: scaleX(-1);"></video>
+
+            <!-- Screen Flash Overlay -->
+            <div class="absolute inset-0 bg-white opacity-0 pointer-events-none transition-opacity duration-150 z-30" id="camera-flash-overlay"></div>
+
+            <!-- Big Animated 3-2-1 Countdown Overlay -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 backdrop-blur-xs z-20 hidden" id="countdown-overlay">
+              <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-bubblegum-hot to-sticker-yellow border-4 border-white shadow-y2k-xl flex items-center justify-center animate-bounce">
+                <span class="text-6xl font-headline-xl font-black text-white drop-shadow-[2px_2px_0px_#2B213A]" id="countdown-number">3</span>
+              </div>
+              <div class="mt-3 bg-white px-4 py-1.5 rounded-full border-2 border-ink-dark shadow-y2k-sm">
+                <span class="font-headline-md text-sm font-bold text-ink-dark uppercase tracking-wider" id="countdown-label">Get ready for Pose #1!</span>
+              </div>
+            </div>
+
+            <!-- Upload Drop Zone (shown when upload mode active) -->
+            <div class="absolute inset-0 bg-surface-container flex flex-col items-center justify-center p-6 text-center border-4 border-dashed border-primary/50 m-4 rounded-xl hidden" id="upload-dropzone">
+              <span class="material-symbols-outlined text-5xl text-primary mb-2">cloud_upload</span>
+              <h3 class="text-title-lg font-title-lg text-ink-dark font-bold mb-1">Drag & Drop Your Photos Here</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm mb-4">
+                Select up to 4 photos (JPG, PNG, WebP). Your photos are processed 100% locally in your browser.
+              </p>
+              <input type="file" id="file-upload-input" accept="image/png,image/jpeg,image/webp" multiple class="hidden"/>
+              <button class="gloss-btn-primary border-2 border-ink-dark text-white rounded-full px-space-md py-2 text-title-md font-bold shadow-y2k hover:scale-105 transition-all" id="btn-browse-files">
+                📁 Browse Files
+              </button>
+            </div>
+          </div>
+
+          <!-- Viewfinder Bottom Control Bar -->
+          <div class="bg-surface-container-high border-t-2 border-ink-dark p-3 flex flex-wrap items-center justify-between gap-2">
+            <!-- Flash & Mirror Toggles -->
+            <div class="flex items-center gap-2">
+              <button class="px-3 py-1.5 rounded-full border-2 border-ink-dark bg-white text-ink-dark font-label-md text-xs font-bold shadow-y2k-sm hover:bg-surface-bright transition-all flex items-center gap-1.5" id="btn-toggle-flash">
+                <span class="material-symbols-outlined text-[16px] text-amber-500">flash_on</span>
+                <span id="flash-status-text">Flash: ON</span>
+              </button>
+              <button class="px-3 py-1.5 rounded-full border-2 border-ink-dark bg-white text-ink-dark font-label-md text-xs font-bold shadow-y2k-sm hover:bg-surface-bright transition-all flex items-center gap-1.5" id="btn-toggle-mirror">
+                <span class="material-symbols-outlined text-[16px] text-secondary">flip</span>
+                <span>Mirror Feed</span>
+              </button>
+            </div>
+
+            <!-- Big Primary Shutter Button -->
+            <div class="flex items-center gap-2">
+              <button class="gloss-btn-primary border-2 border-ink-dark text-white rounded-full px-space-lg py-2.5 font-headline-md text-sm font-extrabold shadow-y2k hover:scale-105 active:translate-y-0.5 transition-all flex items-center gap-2" id="btn-snap-sequence">
+                <span>✨ Snap 4 Photos (3s Timer)</span>
+              </button>
+              <button class="gloss-btn-secondary border-2 border-ink-dark text-ink-dark rounded-full px-3 py-2 font-label-md text-xs font-bold shadow-y2k-sm hover:bg-surface transition-all" id="btn-single-snap" title="Take 1 photo immediately">
+                <span>Single Snap</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-on-surface-variant flex items-center gap-1">
+          <span class="material-symbols-outlined text-[14px]">info</span>
+          <span>Having camera trouble? Switch to <button class="underline font-bold text-primary" id="btn-switch-upload-link">Upload Photos</button> anytime.</span>
+        </p>
+      </section>
+
+      <!-- Right Column: Photostrip Film Reel / Slots Tray -->
+      <section class="lg:col-span-4 flex flex-col gap-space-sm">
+        <div class="bg-surface-container-lowest border-2 border-ink-dark rounded-2xl shadow-y2k-lg p-space-md flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between pb-2 border-b-2 border-ink-dark">
+            <span class="font-headline-md text-sm font-extrabold text-ink-dark flex items-center gap-1.5">
+              <span class="w-3 h-3 rounded-full bg-bubblegum-hot"></span>
+              <span>PHOTOSTRIP TRAY</span>
+            </span>
+            <span class="text-label-sm font-label-sm bg-bubblegum-soft text-ink-dark px-2 py-0.5 rounded-full font-bold border border-ink-dark" id="slots-count-badge">
+              0/4 READY
+            </span>
+          </div>
+
+          <!-- 4 Slot Cards -->
+          <div class="flex flex-col gap-2.5" id="slots-container">
+            <!-- Slots will be rendered here dynamically -->
+          </div>
+
+          <!-- Tray Action Footer -->
+          <div class="pt-2 border-t border-ink-dark/20 flex items-center justify-between">
+            <button class="text-xs font-bold text-error hover:underline flex items-center gap-1" id="btn-clear-all-photos">
+              <span class="material-symbols-outlined text-[14px]">delete</span>
+              <span>Clear All & Retake</span>
+            </button>
+            <span class="text-[11px] font-label-sm text-on-surface-variant">Preset: 4-Frame Classic</span>
+          </div>
+        </div>
+
+        <!-- Format Badge -->
+        <div class="bg-surface-container border-2 border-ink-dark rounded-xl p-3 shadow-y2k-sm flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-white border border-ink-dark flex items-center justify-center text-primary font-bold">
+            2×6
+          </div>
+          <div>
+            <p class="text-xs font-bold text-ink-dark">Strip Format: 2×6 Classic</p>
+            <p class="text-[11px] text-on-surface-variant">Frames auto-assemble when all 4 are snapped.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Studio Bottom Navigation Bar -->
+    <div class="bg-surface-container-low border-2 border-ink-dark rounded-2xl p-space-sm shadow-y2k flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+      <!-- Camera Input Selector -->
+      <div class="flex items-center gap-2 w-full sm:w-auto">
+        <span class="material-symbols-outlined text-[20px] text-primary">videocam</span>
+        <select class="bg-white border-2 border-ink-dark rounded-full px-3 py-1 text-xs font-bold text-ink-dark focus:ring-0 shadow-y2k-sm" id="camera-device-select">
+          <option value="">Default Web Camera</option>
+        </select>
+      </div>
+
+      <!-- Quick Vibe Filter -->
+      <div class="flex items-center gap-1 text-xs font-bold">
+        <span class="text-on-surface-variant mr-1">Vibe:</span>
+        <button class="px-2.5 py-1 rounded-full border border-ink-dark bg-cyber-sky text-ink-dark font-bold shadow-y2k-sm" data-quick-filter="original">Original</button>
+        <button class="px-2.5 py-1 rounded-full border border-ink-dark bg-white hover:bg-bubblegum-soft text-ink-dark" data-quick-filter="soft-pink">Soft ✨</button>
+        <button class="px-2.5 py-1 rounded-full border border-ink-dark bg-white hover:bg-baby-blue text-ink-dark" data-quick-filter="cool-blue">Cool ❄️</button>
+        <button class="px-2.5 py-1 rounded-full border border-ink-dark bg-white hover:bg-sticker-yellow text-ink-dark" data-quick-filter="vintage-flash">Vintage ⚡</button>
+      </div>
+
+      <!-- Continue to Editor CTA -->
+      <button class="gloss-btn-primary border-2 border-ink-dark text-white rounded-full px-space-lg py-2.5 font-headline-md text-sm font-extrabold shadow-y2k hover:scale-105 active:translate-y-0.5 transition-all flex items-center gap-2 w-full sm:w-auto justify-center" id="btn-continue-editor">
+        <span>Continue to Scrapbook Editor</span>
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- ================= VIEW 3: CREATIVE SCRAPBOOK EDITOR ================= -->
+  <main class="view-panel flex-1 flex-col h-[calc(100vh-65px)] overflow-hidden" id="view-editor">
+    <!-- Editor Top Action Bar -->
+    <header class="border-b-2 border-ink-dark bg-surface-container shadow-[0_3px_0_0_#2B213A] z-40 relative flex-shrink-0 px-space-md py-2">
+      <div class="flex justify-between items-center w-full max-w-7xl mx-auto gap-2">
+        <!-- Back to Studio & Filename -->
+        <div class="flex items-center gap-space-sm">
+          <button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full border-2 border-ink-dark bg-surface-container-lowest font-label-md text-xs font-bold text-ink-dark shadow-y2k-sm hover:scale-105 active:translate-y-0.5 transition-all" id="btn-back-to-studio">
+            <span class="material-symbols-outlined text-[16px]">arrow_back</span>
+            <span>Studio</span>
+          </button>
+
+          <!-- Filename Input -->
+          <div class="hidden sm:flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border-2 border-ink-dark shadow-inner">
+            <span class="material-symbols-outlined text-primary text-[16px]">description</span>
+            <input class="bg-transparent border-none p-0 text-xs font-mono text-ink-dark focus:ring-0 w-44" type="text" id="strip-filename-input" value="pixel_pop_20261023.png"/>
+            <span class="w-2 h-2 rounded-full bg-mint-pop border border-ink-dark animate-pulse"></span>
+          </div>
+        </div>
+
+        <!-- Center Quick Title -->
+        <div class="hidden md:flex items-center gap-2">
+          <span class="font-headline-md text-sm font-extrabold text-primary">SCRAPBOOK STUDIO</span>
+          <span class="text-[10px] font-bold bg-mint-pop px-2 py-0.5 rounded-full border border-ink-dark">300 DPI CANVAS</span>
+        </div>
+
+        <!-- Actions & Export CTA -->
+        <div class="flex items-center gap-space-xs">
+          <!-- Undo / Redo -->
+          <div class="flex items-center bg-white p-0.5 rounded-full border-2 border-ink-dark shadow-y2k-sm">
+            <button class="w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container-high text-ink-dark transition-all disabled:opacity-40" id="btn-undo" title="Undo (Ctrl+Z)">
+              <span class="material-symbols-outlined text-[16px]">undo</span>
+            </button>
+            <div class="w-px h-4 bg-ink-dark/20"></div>
+            <button class="w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-container-high text-ink-dark transition-all disabled:opacity-40" id="btn-redo" title="Redo (Ctrl+Y)">
+              <span class="material-symbols-outlined text-[16px]">redo</span>
+            </button>
+          </div>
+
+          <!-- Reset Button -->
+          <button class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-full border-2 border-ink-dark bg-white font-label-md text-xs font-bold text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-all" id="btn-reset-canvas">
+            <span class="material-symbols-outlined text-[14px]">refresh</span>
+            <span>Reset</span>
+          </button>
+
+          <!-- Export Primary Button -->
+          <button class="gloss-btn-primary border-2 border-ink-dark text-white font-headline-md text-xs font-extrabold rounded-full px-4 py-2 shadow-y2k hover:scale-105 active:translate-y-0.5 transition-all flex items-center gap-1.5" id="btn-open-export">
+            <span class="material-symbols-outlined text-[16px]">ios_share</span>
+            <span>Preview & Export ★</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace Hybrid Viewport -->
+    <div class="flex-1 flex overflow-hidden relative">
+      <!-- Left Tool Rail -->
+      <nav class="w-16 md:w-20 bg-surface-container border-r-2 border-ink-dark flex flex-col items-center py-space-sm gap-2 z-30 shadow-[2px_0px_0px_#2B213A] flex-shrink-0 select-none">
+        <button class="tool-rail-btn w-12 h-12 md:w-14 md:h-14 rounded-2xl flex flex-col items-center justify-center gap-0.5 border-2 border-ink-dark bg-cyber-sky text-ink-dark shadow-y2k-sm transition-all" data-tool="layouts">
+          <span class="material-symbols-outlined text-[20px]">view_quilt</span>
+          <span class="font-label-sm text-[10px] font-bold">Layouts</span>
+        </button>
+
+        <button class="tool-rail-btn w-12 h-12 md:w-14 md:h-14 rounded-2xl flex flex-col items-center justify-center gap-0.5 border-2 border-transparent hover:border-ink-dark hover:bg-white text-ink-dark transition-all" data-tool="filters">
+          <span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+          <span class="font-label-sm text-[10px] font-bold">Filters</span>
+        </button>
+
+        <button class="tool-rail-btn w-12 h-12 md:w-14 md:h-14 rounded-2xl flex flex-col items-center justify-center gap-0.5 border-2 border-transparent hover:border-ink-dark hover:bg-white text-ink-dark transition-all" data-tool="stickers">
+          <span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+          <span class="font-label-sm text-[10px] font-bold">Stickers</span>
+        </button>
+
+        <button class="tool-rail-btn w-12 h-12 md:w-14 md:h-14 rounded-2xl flex flex-col items-center justify-center gap-0.5 border-2 border-transparent hover:border-ink-dark hover:bg-white text-ink-dark transition-all" data-tool="text">
+          <span class="material-symbols-outlined text-[20px]">title</span>
+          <span class="font-label-sm text-[10px] font-bold">Text</span>
+        </button>
+
+        <button class="tool-rail-btn w-12 h-12 md:w-14 md:h-14 rounded-2xl flex flex-col items-center justify-center gap-0.5 border-2 border-transparent hover:border-ink-dark hover:bg-white text-ink-dark transition-all" data-tool="frames">
+          <span class="material-symbols-outlined text-[20px]">crop_portrait</span>
+          <span class="font-label-sm text-[10px] font-bold">Frames</span>
+        </button>
+
+        <button class="tool-rail-btn w-12 h-12 md:w-14 md:h-14 rounded-2xl flex flex-col items-center justify-center gap-0.5 border-2 border-transparent hover:border-ink-dark hover:bg-white text-ink-dark transition-all" data-tool="backdrop">
+          <span class="material-symbols-outlined text-[20px]">texture</span>
+          <span class="font-label-sm text-[10px] font-bold">Backdrop</span>
+        </button>
+      </nav>
+
+      <!-- Secondary Properties Inspector Panel -->
+      <aside class="w-64 md:w-72 bg-surface-container-low border-r-2 border-ink-dark flex flex-col z-20 flex-shrink-0 overflow-y-auto p-space-sm gap-space-sm" id="editor-inspector-panel">
+        <!-- Content will change dynamically based on active tool -->
+        <div id="inspector-content">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Selected Element Floating Inspector (shown when element on canvas is selected) -->
+        <div class="mt-auto bg-white border-2 border-ink-dark rounded-xl p-2.5 shadow-y2k-sm flex flex-col gap-2 hidden" id="element-controls-box">
+          <div class="flex items-center justify-between border-b border-ink-dark/20 pb-1">
+            <span class="text-xs font-bold text-primary flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">tune</span>
+              <span>Selected Element</span>
+            </span>
+            <button class="text-error font-bold text-xs hover:underline" id="btn-delete-element">Delete</button>
+          </div>
+
+          <!-- Size & Rotation Sliders -->
+          <div class="flex flex-col gap-1.5 text-[11px] font-bold text-ink-dark">
+            <div class="flex items-center justify-between">
+              <span>Size:</span>
+              <input type="range" id="slider-element-scale" min="0.4" max="3.0" step="0.1" value="1.0" class="w-32"/>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>Rotate:</span>
+              <input type="range" id="slider-element-rot" min="-180" max="180" step="5" value="0" class="w-32"/>
+            </div>
+          </div>
+
+          <!-- Layer Order Buttons -->
+          <div class="flex gap-1 pt-1">
+            <button class="flex-1 bg-surface-container border border-ink-dark py-1 rounded text-[10px] font-bold hover:bg-surface-bright" id="btn-layer-up">
+              Bring Front
+            </button>
+            <button class="flex-1 bg-surface-container border border-ink-dark py-1 rounded text-[10px] font-bold hover:bg-surface-bright" id="btn-layer-down">
+              Send Back
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center Scrapbook Canvas Stage -->
+      <div class="flex-1 bg-dot-matrix relative overflow-auto flex flex-col items-center justify-center p-space-md" id="editor-canvas-stage">
+        <!-- Canvas Stage Element managed by ScrapbookCanvas -->
+        <div class="w-full h-full flex items-center justify-center" id="scrapbook-canvas-container">
+          <!-- Canvas Photostrip rendered here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Editor Bottom Photo Reel Tray -->
+    <footer class="h-20 bg-surface-container border-t-2 border-ink-dark flex items-center justify-between px-space-md flex-shrink-0 z-30">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[20px]">collections</span>
+        <span class="text-xs font-bold text-ink-dark hidden sm:inline">Photo Reel:</span>
+      </div>
+
+      <!-- 4 Photo Thumbnails -->
+      <div class="flex items-center gap-2" id="editor-bottom-reel">
+        <!-- Thumbnails populated dynamically -->
+      </div>
+
+      <button class="gloss-btn-secondary border-2 border-ink-dark text-ink-dark rounded-full px-3 py-1.5 text-xs font-bold shadow-y2k-sm hover:bg-surface transition-all flex items-center gap-1.5" id="btn-retake-all-from-editor">
+        <span class="material-symbols-outlined text-[16px]">videocam</span>
+        <span>Retake All</span>
+      </button>
+    </footer>
+  </main>
+
+  <!-- ================= VIEW 4: RESULT & EXPORT ================= -->
+  <main class="view-panel flex-1 flex-col" id="view-result">
+    <!-- Celebration Banner -->
+    <section class="w-full bg-gradient-to-r from-bubblegum-soft via-surface-container-highest to-baby-blue border-b-2 border-ink-dark py-space-sm px-space-md">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-xs text-center sm:text-left">
+        <div class="flex items-center gap-space-sm">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-sticker-yellow border-2 border-ink-dark text-ink-dark text-[18px] shadow-y2k-sm animate-sparkle">
+            ★
+          </span>
+          <h1 class="text-headline-md font-headline-md text-primary font-extrabold tracking-tight">
+            PIXEL POP ★ Sesi Selesai!
+          </h1>
+          <span class="text-label-sm font-label-sm bg-bubblegum-hot text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider hidden md:inline-block">
+            Export Ready
+          </span>
+        </div>
+
+        <nav class="flex items-center gap-2 text-label-sm font-label-sm bg-white/80 px-space-md py-1 rounded-full border border-ink-dark shadow-y2k-sm">
+          <span class="text-on-surface-variant flex items-center gap-1">
+            <span class="w-4 h-4 rounded-full bg-mint-pop text-ink-dark inline-flex items-center justify-center font-bold text-[10px]">1</span>
+            Capture
+          </span>
+          <span>→</span>
+          <span class="text-on-surface-variant flex items-center gap-1">
+            <span class="w-4 h-4 rounded-full bg-mint-pop text-ink-dark inline-flex items-center justify-center font-bold text-[10px]">2</span>
+            Edit
+          </span>
+          <span>→</span>
+          <span class="text-primary font-bold flex items-center gap-1 bg-primary-fixed px-2 py-0.5 rounded-full border border-primary">
+            <span class="w-4 h-4 rounded-full bg-primary text-white inline-flex items-center justify-center font-bold text-[10px]">3</span>
+            Ready to Export! ✨
+          </span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Main Result Showcase Workspace -->
+    <div class="flex-1 w-full max-w-7xl mx-auto p-space-md md:p-space-lg lg:p-space-xl flex flex-col lg:flex-row gap-space-lg items-start justify-center relative">
+      <!-- Center Display Mat -->
+      <div class="w-full lg:flex-1 flex flex-col items-center">
+        <div class="w-full max-w-xl bg-dot-matrix p-space-md md:p-space-lg rounded-xl border-2 border-ink-dark shadow-y2k-lg relative transition-all" id="result-desk-mat">
+          <!-- Titlebar -->
+          <div class="flex items-center justify-between pb-space-sm mb-space-md border-b-2 border-ink-dark/30">
+            <div class="flex items-center gap-1.5">
+              <span class="w-3.5 h-3.5 rounded-full bg-bubblegum-hot border border-ink-dark inline-block shadow-sm"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-sticker-yellow border border-ink-dark inline-block shadow-sm"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-mint-pop border border-ink-dark inline-block shadow-sm"></span>
+              <span class="text-label-sm font-label-sm font-bold text-ink-dark ml-2">preview_canvas_final.strip</span>
+            </div>
+            <span class="text-label-sm font-label-sm bg-white px-2 py-0.5 rounded border border-ink-dark shadow-y2k-sm font-bold text-tertiary">
+              ZOOM 100%
+            </span>
+          </div>
+
+          <!-- Washi tape accents -->
+          <div class="absolute -top-4 -left-3 washi-tape w-28 h-7 transform -rotate-12 rounded-sm border border-ink-dark/40 z-20"></div>
+          <div class="absolute -bottom-3 -right-2 washi-tape w-28 h-7 transform 6deg rounded-sm border border-ink-dark/40 z-20"></div>
+
+          <!-- Live Generated Canvas Container -->
+          <div class="flex justify-center items-center overflow-auto max-h-[700px] p-2" id="result-canvas-container">
+            <!-- Offscreen rendered canvas image placed here -->
+          </div>
+        </div>
+
+        <div class="mt-space-md flex flex-wrap items-center justify-center gap-space-sm text-label-sm font-label-sm text-on-surface-variant">
+          <span class="px-space-sm py-1 bg-white rounded-full border border-ink-dark shadow-y2k-sm flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px] text-primary">aspect_ratio</span>
+            <span id="result-format-pill">Format: 2x6 in Standard Photostrip</span>
+          </span>
+          <span class="px-space-sm py-1 bg-white rounded-full border border-ink-dark shadow-y2k-sm flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px] text-secondary">palette</span>
+            <span id="result-palette-pill">Palette: Vintage Pink Romance</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Export & Share Actions Panel -->
+      <div class="w-full lg:w-[420px] flex flex-col gap-space-md">
+        <div class="bg-surface-container rounded-xl border-2 border-ink-dark shadow-y2k-lg overflow-hidden relative">
+          <!-- Dialog Title -->
+          <div class="bg-gradient-to-r from-bubblegum-hot via-primary to-tertiary px-space-md py-space-sm border-b-2 border-ink-dark flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-white text-[20px]">stars</span>
+              <h2 class="text-title-md font-title-md text-white font-extrabold tracking-tight">Your Photostrip is Ready! ✨</h2>
+            </div>
+          </div>
+
+          <!-- Specs Pill -->
+          <div class="p-space-md flex flex-col gap-space-md">
+            <div class="bg-white rounded-lg p-space-sm border border-ink-dark/40 shadow-inner flex flex-col gap-1">
+              <div class="flex items-center justify-between">
+                <span class="text-label-sm font-label-sm uppercase tracking-wider text-outline font-bold">Generated Asset</span>
+                <span class="text-label-sm font-label-sm bg-mint-pop/70 text-ink-dark px-2 py-0.5 rounded font-extrabold border border-ink-dark">
+                  Lossless PNG
+                </span>
+              </div>
+              <div class="flex items-center gap-2 pt-1">
+                <span class="material-symbols-outlined text-primary text-[22px]">image</span>
+                <div class="overflow-hidden">
+                  <p class="font-title-md text-[13px] font-bold text-ink-dark truncate" id="export-asset-name">pixel-pop-20261023.png</p>
+                  <p class="text-body-sm font-body-sm text-on-surface-variant text-[11px]" id="export-asset-specs">1200 × 3600 px (300 DPI High-Res) • Lossless</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- PRIMARY DOWNLOAD BUTTON -->
+            <button class="w-full relative group overflow-hidden bg-bubblegum-hot hover:bg-primary text-white rounded-full p-4 border-2 border-ink-dark shadow-y2k active:translate-y-1 active:shadow-y2k-sm transition-all flex items-center justify-center gap-3" id="btn-download-png">
+              <div class="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/50 to-transparent rounded-t-full pointer-events-none"></div>
+              <span class="material-symbols-outlined text-[24px] animate-bounce">download</span>
+              <span class="text-title-lg font-title-lg font-extrabold tracking-tight text-white">
+                ⬇ Download High-Res PNG
+              </span>
+              <span class="text-lg animate-sparkle">✨</span>
+            </button>
+            <p class="text-center text-[11px] font-label-sm text-on-surface-variant">
+              Instant client-side direct download (No watermark, 100% free)
+            </p>
+
+            <!-- Secondary Actions Cluster -->
+            <div class="flex flex-col gap-space-xs pt-space-xs">
+              <button class="w-full bg-white hover:bg-surface-container-high text-ink-dark text-title-md font-title-md font-bold px-space-md py-2.5 rounded-lg border-2 border-ink-dark shadow-y2k-sm active:translate-y-0.5 transition-all flex items-center justify-between" id="btn-edit-again">
+                <span class="flex items-center gap-2">
+                  <span class="text-base">🎨</span>
+                  <span>Edit Again</span>
+                </span>
+                <span class="text-label-sm font-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-ink-dark/30">
+                  Keep Stickers
+                </span>
+              </button>
+
+              <button class="w-full bg-cyber-sky/20 hover:bg-cyber-sky/40 text-ink-dark text-title-md font-title-md font-bold px-space-md py-2.5 rounded-lg border-2 border-ink-dark shadow-y2k-sm active:translate-y-0.5 transition-all flex items-center justify-between" id="btn-copy-clipboard">
+                <span class="flex items-center gap-2">
+                  <span class="text-base">📋</span>
+                  <span>Copy Image to Clipboard</span>
+                </span>
+                <span class="material-symbols-outlined text-[18px] text-secondary">content_copy</span>
+              </button>
+
+              <button class="w-full bg-white hover:bg-error-container/40 text-ink-dark text-title-md font-title-md font-bold px-space-md py-2.5 rounded-lg border-2 border-ink-dark shadow-y2k-sm active:translate-y-0.5 transition-all flex items-center justify-between" id="btn-start-new-session">
+                <span class="flex items-center gap-2">
+                  <span class="text-base">📸</span>
+                  <span>Start New Session</span>
+                </span>
+                <span class="text-label-sm font-label-sm text-error font-medium">Reset Booth</span>
+              </button>
+            </div>
+
+            <!-- Privacy Badge -->
+            <div class="bg-white rounded-lg p-2.5 border-2 border-dashed border-tertiary-container flex items-center gap-2.5">
+              <span class="text-2xl select-none">🛡️</span>
+              <div>
+                <p class="text-label-sm font-label-sm font-bold text-ink-dark">100% Client-Side Privacy</p>
+                <p class="text-[11px] font-body-sm text-on-surface-variant">Rendered locally in your browser. No files stored online.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Share Shortcuts Card -->
+        <div class="bg-surface-container-low rounded-xl border-2 border-ink-dark p-space-md shadow-y2k flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-label-md font-label-md font-bold text-ink-dark flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px] text-tertiary">share</span>
+              <span>Direct Share Shortcuts</span>
+            </span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant">Web Share API</span>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2">
+            <button class="bg-white hover:bg-bubblegum-soft/30 p-2 rounded-lg border border-ink-dark shadow-y2k-sm text-center flex flex-col items-center gap-1" id="btn-share-instagram">
+              <span class="text-lg">📸</span>
+              <span class="text-[11px] font-label-sm font-bold text-ink-dark">Instagram</span>
+            </button>
+            <button class="bg-white hover:bg-cyber-sky/30 p-2 rounded-lg border border-ink-dark shadow-y2k-sm text-center flex flex-col items-center gap-1" id="btn-share-tiktok">
+              <span class="text-lg">🎵</span>
+              <span class="text-[11px] font-label-sm font-bold text-ink-dark">TikTok</span>
+            </button>
+            <button class="bg-white hover:bg-mint-pop/30 p-2 rounded-lg border border-ink-dark shadow-y2k-sm text-center flex flex-col items-center gap-1" id="btn-share-native">
+              <span class="text-lg">💬</span>
+              <span class="text-[11px] font-label-sm font-bold text-ink-dark">Share API</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= MODALS & POPUPS ================= -->
+  <!-- Help Modal -->
+  <div class="fixed inset-0 bg-ink-dark/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden" id="modal-help">
+    <div class="bg-white border-2 border-ink-dark rounded-2xl max-w-lg w-full p-space-md shadow-y2k-xl flex flex-col gap-3">
+      <div class="flex justify-between items-center border-b-2 border-ink-dark pb-2">
+        <h3 class="font-headline-md text-base font-extrabold text-primary flex items-center gap-1.5">
+          <span>PIXEL POP ★ Retro Help & Guide</span>
+        </h3>
+        <button class="w-6 h-6 rounded bg-bubblegum-hot text-white border border-ink-dark font-bold text-xs" id="btn-close-help">✕</button>
+      </div>
+      <div class="text-body-sm font-body-sm text-ink-dark flex flex-col gap-2.5 py-1">
+        <p><strong>📸 Webcam Capture:</strong> Stand in good lighting, click "Snap 4 Photos", and strike 4 cute poses during the countdown!</p>
+        <p><strong>📁 Upload Fallback:</strong> If you don't have a webcam, upload up to 4 photos from your phone or laptop.</p>
+        <p><strong>🎨 Scrapbook Tools:</strong> Click any sticker to slap it onto the strip. Drag to move, grab the top stem to rotate, or drag the yellow corner to resize!</p>
+        <p><strong>⌨️ Keyboard Shortcuts:</strong> Delete/Backspace to delete element. Arrow keys to nudge. Ctrl+Z / Ctrl+Y for Undo/Redo.</p>
+        <p><strong>🔒 Privacy:</strong> Everything runs locally in your browser cache. No photos are ever uploaded to any cloud server.</p>
+      </div>
+      <button class="gloss-btn-primary border-2 border-ink-dark text-white rounded-full py-2 font-bold text-xs shadow-y2k-sm" id="btn-help-ok">Got it!</button>
+    </div>
+  </div>
+
+  <!-- Reset Confirmation Modal -->
+  <div class="fixed inset-0 bg-ink-dark/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden" id="modal-reset-confirm">
+    <div class="bg-white border-2 border-ink-dark rounded-2xl max-w-sm w-full p-space-md shadow-y2k-xl flex flex-col gap-3 text-center">
+      <span class="text-4xl">⚠️</span>
+      <h3 class="font-headline-md text-base font-bold text-ink-dark">Reset All Decorations?</h3>
+      <p class="text-body-sm text-on-surface-variant">This will clear all stickers and text from the canvas. Your photos will remain safe.</p>
+      <div class="flex gap-2 pt-2">
+        <button class="flex-1 bg-surface-container border border-ink-dark rounded-full py-2 text-xs font-bold" id="btn-reset-cancel">Cancel</button>
+        <button class="flex-1 bg-error text-white border border-ink-dark rounded-full py-2 text-xs font-bold hover:bg-red-700" id="btn-reset-confirm">Reset Canvas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="fixed bottom-6 right-6 bg-white border-2 border-ink-dark px-4 py-2.5 rounded-xl shadow-y2k flex items-center gap-2 z-50 transition-all transform translate-y-20 opacity-0 pointer-events-none" id="toast-notification">
+    <span class="text-lg" id="toast-icon">✨</span>
+    <span class="text-xs font-bold text-ink-dark" id="toast-message">Action completed</span>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer class="bg-surface-container border-t-2 border-ink-dark py-space-sm px-space-md mt-auto text-center">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-on-surface-variant">
+      <p>PIXEL POP ★ © 2000-2026 PIXEL POP STUDIO • 100% Client-Side Privacy • Made with ♥</p>
+      <div class="flex items-center gap-3 font-semibold">
+        <span class="bg-white px-2 py-0.5 rounded border border-ink-dark text-ink-dark font-mono">Visitors: 042,918</span>
+        <button class="hover:text-primary underline" id="footer-btn-help">Retro FAQ</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Main Script -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

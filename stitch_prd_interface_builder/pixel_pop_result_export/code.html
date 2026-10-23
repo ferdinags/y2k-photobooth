@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PIXEL POP ★ Sesi Selesai! Ready to Export</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-high": "#ede4ff",
+            "on-surface": "#1d1733",
+            "chrome-shine": "#FFFFFF",
+            "on-background": "#1d1733",
+            "bubblegum-soft": "#FFB7D5",
+            "on-secondary-fixed-variant": "#004d63",
+            "surface-container": "#f2ebff",
+            "surface-dim": "#dfd5fb",
+            "tertiary": "#5f559a",
+            "secondary": "#006783",
+            "on-tertiary-fixed": "#1b0c53",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#6e0044",
+            "inverse-surface": "#332c49",
+            "secondary-fixed": "#bce9ff",
+            "ink-dark": "#2B213A",
+            "error": "#ba1a1a",
+            "cyber-sky": "#70D6FF",
+            "lilac-dream": "#BDB2FF",
+            "tertiary-container": "#a096e1",
+            "outline-variant": "#dcbfc9",
+            "background": "#fdf7ff",
+            "mint-pop": "#A0E7E5",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#564149",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#ac2471",
+            "on-primary-fixed-variant": "#8c0058",
+            "chrome-edge": "#94A3B8",
+            "on-primary-fixed": "#3d0024",
+            "bubblegum-hot": "#FF69B4",
+            "tertiary-fixed-dim": "#c8bfff",
+            "secondary-fixed-dim": "#6cd3fc",
+            "surface": "#fdf7ff",
+            "on-secondary-fixed": "#001f2a",
+            "canvas-bg": "#F8F7FF",
+            "primary-fixed": "#ffd8e6",
+            "surface-bright": "#fdf7ff",
+            "primary-container": "#ff69b4",
+            "inverse-on-surface": "#f5eeff",
+            "inverse-primary": "#ffb0d0",
+            "chrome-silver": "#E2E8F0",
+            "tertiary-fixed": "#e5deff",
+            "on-primary": "#ffffff",
+            "baby-blue": "#B4E4FF",
+            "surface-variant": "#e7deff",
+            "primary-fixed-dim": "#ffb0d0",
+            "on-secondary-container": "#005c75",
+            "sparkle-coral": "#FF85A1",
+            "on-error-container": "#93000a",
+            "surface-container-highest": "#e7deff",
+            "on-tertiary-container": "#362c6f",
+            "outline": "#897179",
+            "surface-container-low": "#f8f1ff",
+            "surface-tint": "#ac2471",
+            "sticker-yellow": "#FFD166",
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "secondary-container": "#70d6ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter-sm": "0.75rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "margin-desktop": "2.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem",
+            "gutter-lg": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Epilogue"],
+            "headline-lg": ["Epilogue"],
+            "label-md": ["Space Grotesk"],
+            "label-sm": ["Space Grotesk"],
+            "title-lg": ["Space Grotesk"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "title-md": ["Space Grotesk"],
+            "headline-lg-mobile": ["Epilogue"],
+            "headline-md": ["Epilogue"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Epilogue"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["30px", { "lineHeight": "38px", "fontWeight": "800" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "700" }],
+            "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "title-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-xl": ["44px", { "lineHeight": "52px", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .retro-grid-bg {
+      background-color: #F8F7FF;
+      background-image: radial-gradient(#dcbfc9 1.5px, transparent 1.5px), radial-gradient(#BDB2FF 1px, transparent 1px);
+      background-size: 24px 24px, 12px 12px;
+      background-position: 0 0, 12px 12px;
+    }
+    .scrapbook-desk {
+      background-color: #f8f1ff;
+      background-image: 
+        linear-gradient(45deg, #ede4ff 25%, transparent 25%), 
+        linear-gradient(-45deg, #ede4ff 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #ede4ff 75%), 
+        linear-gradient(-45deg, transparent 75%, #ede4ff 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+    .glossy-shine {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 0.05) 100%);
+    }
+    .washi-tape {
+      background: repeating-linear-gradient(45deg, rgba(255, 183, 213, 0.8), rgba(255, 183, 213, 0.8) 8px, rgba(160, 231, 229, 0.8) 8px, rgba(160, 231, 229, 0.8) 16px);
+      box-shadow: 1px 1px 2px rgba(43, 33, 58, 0.2);
+    }
+    .holo-film {
+      background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(112,214,255,0.2) 25%, rgba(255,183,213,0.3) 50%, rgba(255,209,102,0.2) 75%, rgba(255,255,255,0.3) 100%);
+    }
+    @keyframes sparkle-pulse {
+      0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+      50% { transform: scale(1.25) rotate(15deg); opacity: 1; }
+    }
+    .animate-sparkle {
+      animation: sparkle-pulse 2.2s infinite ease-in-out;
+    }
+    .animate-sparkle-delayed {
+      animation: sparkle-pulse 2.8s infinite ease-in-out 0.8s;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md retro-grid-bg min-h-screen flex flex-col selection:bg-bubblegum-hot selection:text-white">
+<!-- TOP NAV BAR (Shared Component Source of Truth) -->
+<header class="bg-surface border-b-2 border-ink-dark bg-surface-container shadow-[0_4px_0_0_#2B213A] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-space-md md:px-margin-desktop py-space-sm max-w-7xl mx-auto">
+<div class="flex items-center gap-space-md">
+<a class="text-headline-md font-headline-md font-extrabold text-primary tracking-tight drop-shadow-[2px_2px_0px_#2B213A] flex items-center gap-space-xs" href="#">
+<span>PIXEL POP ★</span>
+</a>
+<div class="hidden sm:inline-flex items-center px-space-sm py-0.5 rounded-full bg-mint-pop/50 border border-ink-dark text-ink-dark text-label-sm font-label-sm shadow-[1px_1px_0_0_#2B213A]">
+          v2.4 Cyber-Strip
+        </div>
+</div>
+<!-- Navigation Links from JSON -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Studio</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Templates</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Sticker Pack</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-label-md font-label-md" href="#">Gallery</a>
+</nav>
+<!-- Trailing Action Cluster from JSON -->
+<div class="flex items-center gap-space-xs md:gap-space-sm">
+<div class="hidden lg:flex items-center gap-1 bg-surface-container-lowest px-1.5 py-1 rounded-full border border-ink-dark shadow-[1px_1px_0_0_#2B213A]">
+<button aria-label="Undo" class="p-1 hover:bg-surface-container-high rounded-full transition-transform active:translate-y-0.5" title="Undo">
+<span class="material-symbols-outlined text-primary text-[18px]">undo</span>
+</button>
+<button aria-label="Redo" class="p-1 hover:bg-surface-container-high rounded-full transition-transform active:translate-y-0.5" title="Redo">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">redo</span>
+</button>
+<button aria-label="Help" class="p-1 hover:bg-surface-container-high rounded-full transition-transform active:translate-y-0.5" title="Help">
+<span class="material-symbols-outlined text-tertiary text-[18px]">help</span>
+</button>
+</div>
+<button class="bg-surface-container-high hover:bg-surface-variant text-ink-dark text-label-md font-label-md font-bold px-space-md py-1.5 rounded-full border-2 border-ink-dark shadow-[2px_2px_0_0_#2B213A] active:translate-y-0.5 active:shadow-[1px_1px_0_0_#2B213A] transition-all">
+          Start Booth
+        </button>
+<button class="bg-primary text-white text-label-md font-label-md font-bold px-space-md py-1.5 rounded-full border-2 border-ink-dark shadow-[2px_2px_0_0_#2B213A] active:translate-y-0.5 active:shadow-[1px_1px_0_0_#2B213A] transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+          Export
+        </button>
+</div>
+</div>
+</header>
+<!-- CELEBRATION BANNER & BREADCRUMBS -->
+<section class="w-full bg-gradient-to-r from-bubblegum-soft via-surface-container-highest to-baby-blue border-b-2 border-ink-dark py-space-sm px-space-md">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-xs text-center sm:text-left">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-sticker-yellow border-2 border-ink-dark text-ink-dark text-[18px] shadow-[2px_2px_0_0_#2B213A] animate-sparkle">
+          ★
+        </span>
+<h1 class="text-headline-md font-headline-md text-primary font-extrabold tracking-tight drop-shadow-[1px_1px_0_0_#FFFFFF]">
+          PIXEL POP ★ Sesi Selesai!
+        </h1>
+<span class="text-label-sm font-label-sm bg-bubblegum-hot text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider hidden md:inline-block">
+          Export Ready
+        </span>
+</div>
+<!-- Retro Breadcrumb Journey -->
+<nav aria-label="Booth Progress" class="flex items-center gap-1 md:gap-2 text-label-sm font-label-sm bg-white/80 px-space-md py-1 rounded-full border border-ink-dark shadow-[2px_2px_0_0_#2B213A]">
+<span class="text-on-surface-variant/80 font-medium flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-mint-pop text-ink-dark inline-flex items-center justify-center font-bold text-[10px]">1</span>
+          Capture
+        </span>
+<span class="text-outline">→</span>
+<span class="text-on-surface-variant/80 font-medium flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-mint-pop text-ink-dark inline-flex items-center justify-center font-bold text-[10px]">2</span>
+          Edit
+        </span>
+<span class="text-outline">→</span>
+<span class="text-primary font-bold flex items-center gap-1 bg-primary-fixed px-2 py-0.5 rounded-full border border-primary">
+<span class="w-4 h-4 rounded-full bg-primary text-white inline-flex items-center justify-center font-bold text-[10px]">3</span>
+          Ready to Export! ✨
+        </span>
+</nav>
+</div>
+</section>
+<!-- MAIN SHOWCASE CANVAS & EXPORT WORKSPACE -->
+<main class="flex-1 w-full max-w-7xl mx-auto p-space-md md:p-space-lg lg:p-space-xl flex flex-col lg:flex-row gap-space-lg items-start justify-center relative">
+<!-- FLOATING DECORATIVE Y2K SPARKLES & GRAPHICS -->
+<div class="absolute top-8 left-8 text-sparkle-coral text-4xl select-none pointer-events-none animate-sparkle">✦</div>
+<div class="absolute bottom-16 left-1/3 text-cyber-sky text-3xl select-none pointer-events-none animate-sparkle-delayed">✧</div>
+<div class="absolute top-1/4 right-8 text-sticker-yellow text-4xl select-none pointer-events-none animate-sparkle">★</div>
+<!-- LEFT / CENTER: SCRAPBOOK DESK PHOTOSTRIP DISPLAY MAT -->
+<div class="w-full lg:flex-1 flex flex-col items-center">
+<!-- DESK MAT WRAPPER -->
+<div class="w-full max-w-xl scrapbook-desk p-space-md md:p-space-lg rounded-xl border-2 border-ink-dark shadow-[6px_6px_0px_#2B213A] relative">
+<!-- MAT TITLEBAR / OS CHROME ACCENT -->
+<div class="flex items-center justify-between pb-space-sm mb-space-md border-b-2 border-ink-dark/30">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-bubblegum-hot border border-ink-dark inline-block shadow-[1px_1px_0_0_#2B213A]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-sticker-yellow border border-ink-dark inline-block shadow-[1px_1px_0_0_#2B213A]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-mint-pop border border-ink-dark inline-block shadow-[1px_1px_0_0_#2B213A]"></span>
+<span class="text-label-sm font-label-sm font-bold text-ink-dark ml-2 tracking-tight">preview_canvas_v1.raw.strip</span>
+</div>
+<span class="text-label-sm font-label-sm bg-white px-2 py-0.5 rounded border border-ink-dark shadow-[1px_1px_0_0_#2B213A] font-bold text-tertiary">
+            ZOOM 100%
+          </span>
+</div>
+<!-- STICKER ACCENTS ON DESK -->
+<div class="absolute -top-4 -left-3 washi-tape w-28 h-7 transform -rotate-12 rounded-sm border border-ink-dark/40 z-20"></div>
+<div class="absolute -bottom-3 -right-2 washi-tape w-28 h-7 transform 6deg rounded-sm border border-ink-dark/40 z-20"></div>
+<!-- FLOATING STAMP BADGE -->
+<div class="absolute -top-3 right-8 bg-sticker-yellow text-ink-dark px-space-sm py-1 rounded-full border-2 border-ink-dark shadow-[3px_3px_0_0_#2B213A] transform rotate-6 z-20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-label-sm font-label-sm font-extrabold uppercase">Soft Pink Vintage Filter</span>
+</div>
+<!-- THE PHYSICAL PHOTOSTRIP CARD -->
+<div class="mx-auto w-[280px] sm:w-[320px] bg-white p-space-sm sm:p-space-md rounded-lg border-2 border-ink-dark shadow-[8px_8px_0px_#2B213A] relative holo-film transition-transform duration-300 hover:rotate-1">
+<!-- Photostrip Header Logo / Date Stamp -->
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-dashed border-outline-variant">
+<span class="text-label-sm font-label-sm font-black tracking-widest text-primary flex items-center gap-1">
+<span>PIXEL POP</span>
+<span class="text-bubblegum-hot">★</span>
+<span>BOOTH</span>
+</span>
+<span class="text-[10px] font-label-sm font-bold text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded border border-ink-dark">
+              OCT 2026
+            </span>
+</div>
+<!-- 4 PHOTO CUTOUT SLOTS (Vertical Y2K Strip) -->
+<div class="flex flex-col gap-space-sm">
+<!-- Photo 1: Big smiles / besties -->
+<div class="relative group rounded-md border-2 border-ink-dark overflow-hidden aspect-[4/3] bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Two cheerful young female friends posing with playful peace signs inside an early 2000s neon retro photobooth. The photograph is treated with a dreamy soft pink vintage film filter, subtle film grain, and gentle glossy rim highlights. The lighting is warm and bright, exuding a lighthearted and nostalgic Y2K cyber-cute youth aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIfeWo0WWwsgdyYnuACeHbPLRhYsqpZptVuUsSjCMm7tBBE1lC_PuOX-1D086alfXDDnof1IlWF98W-MQMwLs_ps6z-n7waHoZg4KdkBfL5W-KGZTzwFK1cMWyOSfbQ43FnRiJLzGRqoUUrapCDF2nxp5Y3wZpCrgd1WWuXVgBHQxvrfv3yJ59ylhH2pVdmhgrj9GW0c177cra2c-0gpwtkQ6cKlQYaA6wNhVLpP7sta-KYWMyXB1qQA"/>
+<!-- Cyber sticker overlay: Sparkling Star -->
+<div class="absolute top-2 right-2 select-none pointer-events-none drop-shadow-[2px_2px_0_#2B213A]">
+<span class="text-xl">✨</span>
+</div>
+<div class="absolute bottom-1 left-2 text-[10px] font-label-sm font-bold text-white bg-ink-dark/60 px-1.5 rounded backdrop-blur-xs">
+                #01 • FLASH
+              </div>
+</div>
+<!-- Photo 2: Cute silly pout / sunglasses -->
+<div class="relative group rounded-md border-2 border-ink-dark overflow-hidden aspect-[4/3] bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Close up shot of two friends wearing tinted candy-colored frameless Y2K sunglasses playfully pouting at the photobooth camera. Soft pastel pink tones bathe the scene with delicate lens flare sparkles and subtle warm vignette. The mood is joyful, spontaneous, and retro digital scrapbook style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrzmMXRFdWETLh5EBkGqF9BLYRPN6cW4tDp_D-Px7AeEyCIxus0ryOitCFAaLWOo-Ye6fmecv_YRACpKGXY2s7oZFi79IvwviJlJPTIbQFhPkPsbwRBJ5CPRRBQd4T07gc6xxKkw-Emj17BpiibtDoJZtbfqKX63oT0_OIo3p9JLVkZhv_WB1mHc-hs_9ZX7UMxzP43RgTAXrq-3R7di3n9s309eyY625j_BPPQ20ljN2rFFLnMjGS4A"/>
+<!-- Cyber sticker overlay: Holographic Butterfly -->
+<div class="absolute -top-1 -left-1 select-none pointer-events-none transform -rotate-12 drop-shadow-[2px_2px_0_#2B213A]">
+<span class="text-2xl">🦋</span>
+</div>
+<div class="absolute bottom-1 right-2 text-[10px] font-label-sm font-bold text-white bg-ink-dark/60 px-1.5 rounded backdrop-blur-xs">
+                #02 • CUTE
+              </div>
+</div>
+<!-- Photo 3: Heart hands pose -->
+<div class="relative group rounded-md border-2 border-ink-dark overflow-hidden aspect-[4/3] bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Two best friends creating a joint heart shape with their hands framed centered in a vintage photobooth box. The shot is washed in dreamy bubblegum pink and lavender film tones with authentic soft-focus edge glows and crisp digital detail. The atmosphere feels lively, sweet, and celebratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3VomLYDHCkpBQiszT91t3H4NDjNTEcnpLRjfcCsdeI49y6rZ7O49u9EWiW4zEFo7ZrJUQxxJI11UHsvr1ZUQPn8sao9u2dyfBRXiipMuwKs7y5Ca12uN0VESG2PQ6hJpmJx-471zvguxDll-godo8VYWtBOVrS2VxwrYCTtZaWVIQkBdmKAwhDfbHFeAdKqnZYxEQzFcZbk3Xq1qDvCA0vHsc6JE4wGNX4s90wFhJKYWJZL2DX3jfAA"/>
+<!-- Sticker: Pink Cyber Heart & Sparkle -->
+<div class="absolute bottom-2 right-3 select-none pointer-events-none transform rotate-12 drop-shadow-[2px_2px_0_#2B213A]">
+<span class="text-xl">💖</span>
+</div>
+<div class="absolute bottom-1 left-2 text-[10px] font-label-sm font-bold text-white bg-ink-dark/60 px-1.5 rounded backdrop-blur-xs">
+                #03 • SWEET
+              </div>
+</div>
+<!-- Photo 4: Spontaneous laughter -->
+<div class="relative group rounded-md border-2 border-ink-dark overflow-hidden aspect-[4/3] bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Candid photostrip frame of two teenage girls laughing uncontrollably together in a retro photo station, with metallic tinsel backdrop hints. The imagery features signature soft pink vintage color grading, high key cheerful contrast, and authentic 2000s cyber scrapbook warmth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCunwMJdQYm27h6bu3LyW4itNfLqjnQtbieeXG7GTypjTIEvu43H9bEM_2l-QFPjP0qTuqAytWq1w9L-G1gh7zxh6UbhQkkf5kT6lqi0w1ge2_18wmJr3JxHnWK8dqQIol0P44qCmMEMYKuaehTmI6E_BoOh_QYHI7Yz6JocXpJdFU4LD_M_KkQ3GQxptWqlkyMFs7efPMwOtkpmpn_DuXx89BpQ9wTyK5nqR1sdn3r7O9CpeyF8ParsQ"/>
+<!-- Cyber sticker overlay: Retro Pixel Star -->
+<div class="absolute top-1 left-2 select-none pointer-events-none drop-shadow-[2px_2px_0_#2B213A]">
+<span class="text-xl">⭐</span>
+</div>
+<div class="absolute bottom-1 right-2 text-[10px] font-label-sm font-bold text-white bg-ink-dark/60 px-1.5 rounded backdrop-blur-xs">
+                #04 • FOREVER
+              </div>
+</div>
+</div>
+<!-- Photostrip Bottom Footer with Custom Caption -->
+<div class="mt-space-sm pt-space-xs text-center border-t-2 border-ink-dark">
+<div class="bg-primary-fixed border border-ink-dark rounded py-1 px-space-xs mb-1 shadow-[1px_1px_0_0_#2B213A]">
+<p class="font-headline-md text-[14px] text-ink-dark font-extrabold tracking-wider uppercase">
+                BESTIES FOREVER ★ 2026
+              </p>
+</div>
+<div class="flex items-center justify-between text-[9px] font-label-sm text-outline px-1">
+<span>AUTHENTIC STRIP #9940</span>
+<span class="flex items-center gap-0.5">
+<span>MADE ON PIXEL POP</span>
+<span class="material-symbols-outlined text-[10px] text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+</div>
+</div>
+<!-- Glossy Reflection Sheen Overlay -->
+<div class="absolute inset-0 glossy-shine rounded-lg pointer-events-none border border-white/60"></div>
+</div>
+<!-- Mat Interactive Footer Tools -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+<span class="font-bold text-ink-dark">Strip Ready for High-Res Print</span>
+</div>
+<button class="text-primary hover:text-bubblegum-hot font-bold underline transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+            Full Screen Preview
+          </button>
+</div>
+</div>
+<!-- Quick Tips below strip -->
+<div class="mt-space-md flex flex-wrap items-center justify-center gap-space-sm text-label-sm font-label-sm text-on-surface-variant">
+<span class="px-space-sm py-1 bg-white rounded-full border border-ink-dark shadow-[1px_1px_0_0_#2B213A] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">aspect_ratio</span>
+          Format: 2x6 in Standard Photostrip
+        </span>
+<span class="px-space-sm py-1 bg-white rounded-full border border-ink-dark shadow-[1px_1px_0_0_#2B213A] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">palette</span>
+          Palette: Vintage Pink Romance
+        </span>
+</div>
+</div>
+<!-- RIGHT: EXPORT & SHARE ACTION CARD (Y2K Cyber Chrome Container) -->
+<div class="w-full lg:w-[420px] flex flex-col gap-space-md">
+<!-- MAIN EXPORT CONTROL PANEL -->
+<div class="bg-surface-container rounded-xl border-2 border-ink-dark shadow-[6px_6px_0px_#2B213A] overflow-hidden relative">
+<!-- Retro Dialog Title Bar -->
+<div class="bg-gradient-to-r from-bubblegum-hot via-primary to-tertiary px-space-md py-space-sm border-b-2 border-ink-dark flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-[20px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<h2 class="text-title-md font-title-md text-white font-extrabold tracking-tight drop-shadow-[1px_1px_0_#2B213A]">
+              Your Photostrip is Ready! ✨
+            </h2>
+</div>
+<div class="w-6 h-6 rounded bg-surface-container-lowest border border-ink-dark flex items-center justify-center shadow-[1px_1px_0_0_#2B213A] cursor-pointer hover:bg-error-container">
+<span class="material-symbols-outlined text-ink-dark text-[14px] font-bold">close</span>
+</div>
+</div>
+<!-- File Details & Specs Pill -->
+<div class="p-space-md flex flex-col gap-space-md">
+<div class="bg-white rounded-lg p-space-sm border border-ink-dark/40 shadow-inner flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-outline font-bold">Generated Asset</span>
+<span class="text-label-sm font-label-sm bg-mint-pop/70 text-ink-dark px-2 py-0.5 rounded font-extrabold border border-ink-dark">
+                Lossless PNG
+              </span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-primary text-[22px]">image</span>
+<div class="overflow-hidden">
+<p class="font-title-md text-[13px] font-bold text-ink-dark truncate">pixel-pop-20261023.png</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant text-[11px]">1200 × 3600 px (300 DPI High-Res) • 4.2 MB</p>
+</div>
+</div>
+</div>
+<!-- PRIMARY CTA: Big Glossy Bubblegum Pink Download Button -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full relative group overflow-hidden bg-bubblegum-hot hover:bg-primary text-white rounded-full p-4 border-2 border-ink-dark shadow-[4px_4px_0px_#2B213A] active:translate-y-1 active:shadow-[1px_1px_0px_#2B213A] transition-all flex items-center justify-center gap-3">
+<!-- Top Gloss Shine Effect -->
+<div class="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/50 to-transparent rounded-t-full pointer-events-none"></div>
+<span class="material-symbols-outlined text-[24px] animate-bounce">download</span>
+<span class="text-title-lg font-title-lg font-extrabold tracking-tight text-white drop-shadow-[1px_1px_0px_#2B213A]">
+                ⬇ Download High-Res PNG
+              </span>
+<span class="text-lg animate-sparkle">✨</span>
+</button>
+<p class="text-center text-[11px] font-label-sm text-on-surface-variant">
+              Instant client-side direct download (No watermark, 100% free)
+            </p>
+</div>
+<!-- SECONDARY ACTIONS CLUSTER -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<!-- Edit Again (Preserves session) -->
+<button class="w-full bg-surface-container-lowest hover:bg-surface-container-high text-ink-dark text-title-md font-title-md font-bold px-space-md py-2.5 rounded-lg border-2 border-ink-dark shadow-[3px_3px_0px_#2B213A] active:translate-y-0.5 active:shadow-[1px_1px_0px_#2B213A] transition-all flex items-center justify-between">
+<span class="flex items-center gap-2">
+<span class="text-base">🎨</span>
+<span>Edit Again</span>
+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-normal bg-surface-container px-2 py-0.5 rounded border border-ink-dark/30">
+                Keep Stickers
+              </span>
+</button>
+<!-- Copy Image to Clipboard -->
+<button class="w-full bg-cyber-sky/20 hover:bg-cyber-sky/40 text-ink-dark text-title-md font-title-md font-bold px-space-md py-2.5 rounded-lg border-2 border-ink-dark shadow-[3px_3px_0px_#2B213A] active:translate-y-0.5 active:shadow-[1px_1px_0px_#2B213A] transition-all flex items-center justify-between">
+<span class="flex items-center gap-2">
+<span class="text-base">📋</span>
+<span>Copy Image to Clipboard</span>
+</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">content_copy</span>
+</button>
+<!-- Start New Session (Clean slate) -->
+<button class="w-full bg-surface-container-lowest hover:bg-error-container/40 text-ink-dark text-title-md font-title-md font-bold px-space-md py-2.5 rounded-lg border-2 border-ink-dark shadow-[3px_3px_0px_#2B213A] active:translate-y-0.5 active:shadow-[1px_1px_0px_#2B213A] transition-all flex items-center justify-between">
+<span class="flex items-center gap-2">
+<span class="text-base">📸</span>
+<span>Start New Session</span>
+</span>
+<span class="text-label-sm font-label-sm text-error font-medium">Reset Booth</span>
+</button>
+</div>
+<div class="h-px bg-ink-dark/20 my-1"></div>
+<!-- PRINT & SOCIAL TIPS CARD -->
+<div class="bg-surface-container-highest rounded-lg p-space-sm border border-ink-dark/30 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-primary font-bold text-label-md font-label-md">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print & Social Tips</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+              Ideal for Instagram Stories, TikTok lockscreens, or standard 2x6 inch photobooth printouts.
+            </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-[10px] font-label-sm bg-white px-2 py-0.5 rounded border border-ink-dark/30 text-ink-dark font-medium">9:16 Story Ready</span>
+<span class="text-[10px] font-label-sm bg-white px-2 py-0.5 rounded border border-ink-dark/30 text-ink-dark font-medium">Photo Paper 4x6 / 2x6</span>
+</div>
+</div>
+<!-- PRIVACY REASSURANCE BADGE -->
+<div class="bg-white rounded-lg p-2.5 border-2 border-dashed border-tertiary-container flex items-center gap-2.5">
+<span class="text-2xl select-none">🛡️</span>
+<div>
+<p class="text-label-sm font-label-sm font-bold text-ink-dark">100% Client-Side Privacy</p>
+<p class="text-[11px] font-body-sm text-on-surface-variant">
+                Rendered locally in your browser. No files stored online.
+              </p>
+</div>
+</div>
+</div>
+<!-- Y2K Holographic Bottom Edge -->
+<div class="h-2 w-full bg-gradient-to-r from-cyber-sky via-bubblegum-hot to-sticker-yellow border-t border-ink-dark"></div>
+</div>
+<!-- RETRO SHARE SHORTCUTS CARD -->
+<div class="bg-surface-container-low rounded-xl border-2 border-ink-dark p-space-md shadow-[4px_4px_0px_#2B213A] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md font-bold text-ink-dark flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">share</span>
+            Direct Share Shortcuts
+          </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Web Share API</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="bg-white hover:bg-bubblegum-soft/30 p-2 rounded-lg border border-ink-dark shadow-[2px_2px_0px_#2B213A] active:translate-y-0.5 text-center flex flex-col items-center gap-1">
+<span class="text-lg">📸</span>
+<span class="text-[11px] font-label-sm font-bold text-ink-dark">Instagram</span>
+</button>
+<button class="bg-white hover:bg-cyber-sky/30 p-2 rounded-lg border border-ink-dark shadow-[2px_2px_0px_#2B213A] active:translate-y-0.5 text-center flex flex-col items-center gap-1">
+<span class="text-lg">🎵</span>
+<span class="text-[11px] font-label-sm font-bold text-ink-dark">TikTok</span>
+</button>
+<button class="bg-white hover:bg-mint-pop/30 p-2 rounded-lg border border-ink-dark shadow-[2px_2px_0px_#2B213A] active:translate-y-0.5 text-center flex flex-col items-center gap-1">
+<span class="text-lg">💬</span>
+<span class="text-[11px] font-label-sm font-bold text-ink-dark">AirDrop</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- CONFETTI CELEBRATION FOOTER BAR (Shared Component Source of Truth) -->
+<footer class="bg-surface-container border-t-2 border-ink-dark bg-surface-container-low mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-space-sm w-full px-space-md md:px-margin-desktop py-space-md max-w-7xl mx-auto">
+<div class="flex items-center gap-space-sm text-center md:text-left">
+<span class="text-title-md font-title-md font-bold text-primary">PIXEL POP ★</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">
+          © 2000-2025 PIXEL POP STUDIO ★ 100% Client-Side Privacy ★ Made for Instant Cuties
+        </span>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-space-md text-label-sm font-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Sticker Submission</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Print Guidelines</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Retro FAQ</a>
+</div>
+</div>
+</footer>
+</body></html>
